@@ -1,0 +1,154 @@
+[
+  {
+    "file": "raw/GSS/GSS_1972_2024_release3a_stata.zip",
+    "bytes": 47562980,
+    "sha256": "d4fd4e5057d53d6023e55d5114685430321c3ab00ef2bc11099c2358efc65dfe",
+    "source_url": "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip"
+  },
+  {
+    "file": "raw/WPP/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_FULL.xlsx",
+    "bytes": 143606395,
+    "sha256": "704f8a6552f2d88cf5defd916bd13a1178b073721be631cba434e9741a2905fe",
+    "source_url": "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/1_General/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_FULL.xlsx"
+  },
+  {
+    "file": "raw/CEX/intrvw00.zip",
+    "bytes": 70249088,
+    "sha256": "50797571d67641ffcc2bf337f0f8c447cbb7529117ad2a21363fdfb918126415"
+  },
+  {
+    "file": "raw/CEX/intrvw01.zip",
+    "bytes": 71947190,
+    "sha256": "ca6fc4532b8ebb79da1f2e08a8eaebeb45a853453691d5a02343ad412cf85047"
+  },
+  {
+    "file": "raw/CEX/intrvw02.zip",
+    "bytes": 72494755,
+    "sha256": "5ea06c6009c3c0058aaabad4e6f9e2b3e4dc9207b2f23ff772ee412f5fd7cd69"
+  },
+  {
+    "file": "raw/CEX/intrvw03.zip",
+    "bytes": 73485771,
+    "sha256": "84cf7e12035896b49a328955408b47f6bd4d7771bfa30f195aab0b953fb95ff2"
+  },
+  {
+    "file": "raw/CEX/intrvw04.zip",
+    "bytes": 87013200,
+    "sha256": "8e7efbbb60bc3ad0ea1288be69c0747951aa7d882243322f2af734ec111788df"
+  },
+  {
+    "file": "raw/CEX/intrvw05.zip",
+    "bytes": 83945399,
+    "sha256": "6bf04f47ae7ab5f3c2868f6f18517614f55e3c0e8a1a0761648d2812093a6d99"
+  },
+  {
+    "file": "raw/CEX/intrvw06.zip",
+    "bytes": 86242632,
+    "sha256": "1f0d5bc5b55df374d676c689c414dd39f9e8dee58431746773e43dfd560cfdf9"
+  },
+  {
+    "file": "raw/CEX/intrvw07.zip",
+    "bytes": 80659591,
+    "sha256": "899ad1a47175934f2135226cee501b6a894f7bc3571797ddb7a4cd52606e4119"
+  },
+  {
+    "file": "raw/CEX/intrvw08.zip",
+    "bytes": 86707431,
+    "sha256": "800a2aa542fa555ec0c58ddd1aa0bee42c6afe40c3c001d309c73205770765c5"
+  },
+  {
+    "file": "raw/CEX/intrvw09.zip",
+    "bytes": 87224527,
+    "sha256": "ca59c3fee5b867634b19d6a6c6fc36c6bc63b1797ed00bef98581c1824e465ad"
+  },
+  {
+    "file": "raw/CEX/intrvw10.zip",
+    "bytes": 92651480,
+    "sha256": "35db9eb30a4c1c72adab8cc2aae986cf8d7934232a13202ff6801d0a4ff0f9ba"
+  },
+  {
+    "file": "raw/CEX/intrvw11.zip",
+    "bytes": 89918382,
+    "sha256": "48177d3de8e1cd5f01f9859f9f454e02e087adf7989fd2270c7e2fa52eaecef2"
+  },
+  {
+    "file": "raw/CEX/intrvw12.zip",
+    "bytes": 90705412,
+    "sha256": "c6c54dc9dde7c73c3ea226a9d52067704b54045fe4288ed173f8632e6ff0f44f"
+  },
+  {
+    "file": "raw/CEX/intrvw13.zip",
+    "bytes": 88268734,
+    "sha256": "a39bc8f9a37e1b6914e45a39df7e4f566be3aca36ebfb6e7518e0edb466c7e64"
+  },
+  {
+    "file": "raw/CEX/intrvw14.zip",
+    "bytes": 86278239,
+    "sha256": "257d286fd74d6bd382c0cb5d739f1347dae225659b7f487ce68e7c53d286267e"
+  },
+  {
+    "file": "raw/CEX/intrvw15.zip",
+    "bytes": 76726640,
+    "sha256": "efd804b9c1042e88f3415a7d76bc64a1ec9f93f09af34db57474a21bd0eeedd3"
+  },
+  {
+    "file": "raw/CEX/intrvw16.zip",
+    "bytes": 79943166,
+    "sha256": "0cfdc3f63f7b6b3587e89a7774c103984abe35ddc65f4deac79e5a0902626b9b"
+  },
+  {
+    "file": "raw/CEX/intrvw17.zip",
+    "bytes": 73752251,
+    "sha256": "08ae279938a34f538731154c3163f5d4cad0b52b6dc9e64f8e9427c4d72d14f0"
+  },
+  {
+    "file": "raw/CEX/intrvw18.zip",
+    "bytes": 72253196,
+    "sha256": "c8a5a26776ac78e676a0bcdf18b036c80859e15c5e8cecf5a5cb2f2e55944a98"
+  },
+  {
+    "file": "raw/CEX/intrvw19.zip",
+    "bytes": 68514797,
+    "sha256": "fbdc4771cf2b32db495ddc550326d66ae6deae3f55d989efed1b70bccee7ed83"
+  },
+  {
+    "file": "raw/CEX/intrvw20.zip",
+    "bytes": 53895332,
+    "sha256": "de226eaf9b18eb4721e8aca385c94101b8061a74decc5b9f52667c29cf01ba8a"
+  },
+  {
+    "file": "raw/CEX/intrvw21.zip",
+    "bytes": 55164199,
+    "sha256": "9b449829fd10ee71227a3de044e6b6d67e568cc7c02a759dda14e4b0278697f0"
+  },
+  {
+    "file": "raw/CEX/intrvw22.zip",
+    "bytes": 47796149,
+    "sha256": "c99a2f47c0084b7a88812b34c56a1a288be2798ff010b2b59dcf87e072773e17"
+  },
+  {
+    "file": "raw/CEX/intrvw23.zip",
+    "bytes": 46493816,
+    "sha256": "97e9a17edeee28e77a3fd5a7d874e5f4b9034222be204e25b0d902f4c82235ac"
+  },
+  {
+    "file": "raw/CEX/intrvw24.zip",
+    "bytes": 53613162,
+    "sha256": "421ec90c2b8469c10f91eac27988f65f5d09fcfa9944e5069bb00b5460677f26"
+  },
+  {
+    "file": "raw/CEX/intrvw25.zip",
+    "bytes": 41750512,
+    "sha256": "d68d09c237cd14a1c6992f902f972662b40d283e63877e90932a17f5674c2038"
+  },
+  {
+    "file": "raw/WVS/WVS_Time_Series_1981-2022_Stata_v5_0.zip",
+    "bytes": 103303280,
+    "sha256": "486d71add158bc6df6afd335339c6a8f141913a9d296ad7b2239d06fa552320c"
+  },
+  {
+    "file": "raw/EVS/ZA7503_v3-0-0.dta.zip",
+    "bytes": 34142187,
+    "sha256": "264ce2e2c5b5d2c5587d1c8157b8e7bb43a3c15da17ab229d252915c6b737b25"
+  }
+]

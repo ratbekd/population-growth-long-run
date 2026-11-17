@@ -1,0 +1,14 @@
+ln n (direct fertility elasticity)     slope x(1-beta) = 0.0313 (0.0020);  at beta=.85: 0.209 [0.182,0.236]
+ln alpha-hat (inversion)               slope x(1-beta) = 0.0185 (0.0012);  at beta=.85: 0.123 [0.108,0.139]
+
+weighted mean alpha-hat=0.4928  K(mean)=1.574  K(alpha*)=1.883
+S-hat = 0.209 [0.182,0.236]  -> f'=0.791, half-life=2.96 gens [2.58,3.45]
+implied taste elasticity for assumed chi:  xi = (S - chi)/K(mean alpha)
+   chi=0.000: xi=0.133
+   chi=0.050: xi=0.101
+   chi=0.100: xi=0.069
+   chi=0.150: xi=0.037
+   chi=0.209: xi=0.000
+   beta=0.8: S=0.157
+   beta=0.85: S=0.209
+   beta=0.9: S=0.313

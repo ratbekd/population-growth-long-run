@@ -59,7 +59,7 @@ surveys and a panel of 161 countries, and stated ideals rise with habitat at abo
 realised fertility. Calibrated to these estimates, and over a range of scale effects informed by
 cross-country evidence, the model implies that for a stationary equilibrium Korea needs between 1.1 and
 5.4 times the clean effort that produces its current measured clean progress and Japan between 1.1 and
-2.5, China and Italy fall short only at the upper end of the range, and the other five economies we
+2.6, China and Italy fall short only at the upper end of the range, and the other five economies we
 consider clear the threshold throughout. If clean knowledge is instead semi-endogenous, no research share
 secures a stationary population at standard returns to research.
 \end{abstract}
@@ -163,9 +163,9 @@ predicts, not causal effects (Section~\ref{sec:empirics}).
 \item \emph{Quantitative implications.} Calibrated to these estimates, and with clean progress read from
 each country's observed decline in emission intensity, the model implies that for a stationary
 equilibrium Korea needs between 1.1 and 5.4 times the clean effort that produces its current measured
-clean progress and Japan between 1.1 and 2.5, over a sensitivity range for the scale effect,
+clean progress and Japan between 1.1 and 2.6, over a sensitivity range for the scale effect,
 $0\le\nu\le0.5$, that is informed by cross-country evidence. China and Italy clear the threshold
-without a scale effect and fall short at the upper end of the range, by factors of 1.8 and 1.4, while
+without a scale effect and fall short at the upper end of the range, by factors of 1.9 and 1.5, while
 Germany, the United States, France, Sweden and the United Kingdom clear it throughout. Starting from
 today's conditions, transitions add up to a tenth to these requirements. Population stabilises only
 after large declines, and the lower the fertility, the larger the decline: at the within-country
@@ -1308,7 +1308,8 @@ population for the type of place at 16; movers left the city in which they lived
 ideal-fertility rows use respondents with siblings and parents' education recorded, so that both rows
 share one sample; bootstrap over sampling clusters. Panel~C: national habitat is minus the log of population density in the
 survey year (UN WPP 2024); local habitat is minus the log of settlement population; both
-regressions control for log GDP per capita (World Bank) and include study$\times$wave effects;
+regressions control for log GDP per capita (World Bank GDP in current US dollars divided by UN WPP
+population) and include study$\times$wave effects;
 bootstrap over countries.
 \end{tablenotes}
 \end{threeparttable}
@@ -1372,6 +1373,7 @@ Ideal number of children                   & $\phantom{-}0.021$ $(0.041)$ & $0.0
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
+% TODO: name the GDP per capita series used in Table 3; the World Bank series starts in 1960.
 \item All specifications control for log GDP per capita. Panel A: OLS of $\ln\mathcal{A}(\text{TFR}/2.1)$,
 countries with at least one million inhabitants, standard errors clustered by country. Panel B: Poisson
 pseudo-maximum likelihood with wave effects and the controls of Table~\ref{tab:prefs}, completed
@@ -1515,9 +1517,11 @@ common index, $\iota=1$. If quality acts on costs only, $\iota=0$, the same coef
 $e_Q\chi/S$ (Proposition~\ref{prop:split}), so that $e_Q=0.235\times0.209/0.096=0.51$; we report that case
 alongside the baseline.
 
-\emph{Clean research.} Each country's current clean progress is read from its 2005--2022 trend in
-carbon-dioxide emissions per unit of GDP, $g_{\text{int},i}$, which is negative in every country we
-consider: per generation, $g_{B,i}=(1+g_{\text{int},i})^{-30}-1$. With population normalised to one in
+\emph{Clean research.} Each country's current clean progress is read from the average annual rate of change in its
+carbon-dioxide emissions per unit of GDP between 2005 and 2022,
+$g_{\text{int},i}=(I_{i,2022}/I_{i,2005})^{1/17}-1$, where $I$ is emission intensity, measured with the
+Global Carbon Budget emissions and the Maddison Project GDP series compiled by Our World in Data. The
+rate is negative in every country we consider: per generation, $g_{B,i}=(1+g_{\text{int},i})^{-30}-1$. With population normalised to one in
 2023, current clean progress is $\delta_BR_i=g_{B,i}$, so clean effort can be measured relative to the
 effort that would produce the current measured progress, $m\equiv R/R_i$, without data on research
 spending. Because the decline in emission intensity also reflects regulation, energy prices, structural
@@ -1600,20 +1604,20 @@ transitional slowdown of Remark~\ref{rem:transition}.
 \cmidrule(lr){6-9}
  & 2023 & \% a year & & 2023 $=1$ & $\nu=0$ & $\nu=0.5$ & $\nu=1$\tnote{a} & $\nu=0.5$, $\tau_r=0.1$\\
 \midrule
-Korea          & 0.72 & $-1.67$ & 37.8 & 0.04 & 1.11 & 5.38 & 26.08 & 4.91\\
-China          & 1.00 & $-2.71$ & 16.5 & 0.10 & 0.57 & 1.82 & 5.84 & 1.66\\
-Japan          & 1.21 & $-1.73$ & 9.2 & 0.18 & 1.06 & 2.53 & 6.04 & 2.31\\
-Italy          & 1.20 & $-2.64$ & 9.4 & 0.17 & 0.59 & 1.43 & 3.47 & 1.31\\
-Germany        & 1.44 & $-3.18$ & 5.0 & 0.32 & 0.45 & 0.78 & 1.38 & 0.71\\
-Sweden         & 1.43 & $-4.09$ & 5.1 & 0.32 & 0.29 & 0.52 & 0.93 & 0.47\\
-United Kingdom & 1.56 & $-4.70$ & 3.7 & 0.44 & 0.22 & 0.34 & 0.51 & 0.31\\
-United States  & 1.62 & $-2.79$ & 3.1 & 0.51 & 0.54 & 0.76 & 1.07 & 0.70\\
-France         & 1.64 & $-3.08$ & 3.0 & 0.54 & 0.47 & 0.64 & 0.87 & 0.58\\
+Korea          & 0.72 & $-1.66$ & 37.8 & 0.04 & 1.12 & 5.43 & 26.36 & 4.96\\
+China          & 1.00 & $-2.67$ & 16.5 & 0.10 & 0.58 & 1.86 & 5.96 & 1.70\\
+Japan          & 1.21 & $-1.71$ & 9.2 & 0.18 & 1.07 & 2.56 & 6.11 & 2.34\\
+Italy          & 1.20 & $-2.61$ & 9.4 & 0.17 & 0.60 & 1.46 & 3.54 & 1.33\\
+Germany        & 1.44 & $-3.13$ & 5.0 & 0.32 & 0.46 & 0.80 & 1.42 & 0.73\\
+Sweden         & 1.43 & $-4.01$ & 5.1 & 0.32 & 0.30 & 0.54 & 0.96 & 0.49\\
+United Kingdom & 1.56 & $-4.59$ & 3.7 & 0.44 & 0.23 & 0.35 & 0.53 & 0.32\\
+United States  & 1.62 & $-2.75$ & 3.1 & 0.51 & 0.56 & 0.78 & 1.09 & 0.71\\
+France         & 1.64 & $-3.03$ & 3.0 & 0.54 & 0.48 & 0.65 & 0.89 & 0.60\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
-\item $g_{\text{int}}$: trend in CO$_2$ per unit of GDP, 2005--2022 (Global Carbon Budget via Our World in
-Data); TFR from UN WPP 2024. $\epsilon^\ast$: habitat per capita, relative to 2023, at which fertility
+\item $g_{\text{int}}$: average annual rate of change in CO$_2$ per unit of GDP, 2005--2022 (Global Carbon
+Budget emissions and Maddison Project GDP, via Our World in Data); TFR from UN WPP 2024. $\epsilon^\ast$: habitat per capita, relative to 2023, at which fertility
 reaches replacement. $L^\ast=Q_\infty/\epsilon^\ast$: stationary population relative to 2023 when clean
 research clears the threshold. $m^\ast$: clean research needed for a stationary population, relative to
 the effort that would produce the country's current measured clean progress, from \eqref{eq:m_star};
@@ -1628,20 +1632,20 @@ transitions from 2023 need up to a tenth more (Section~\ref{sub:proj}). Without 
 Table~\ref{tab:thresholds} reports the results. Four findings stand out.
 
 \emph{Without a scale effect, current clean progress suffices almost everywhere.} With $\nu=0$, only Korea
-and Japan fall short, and narrowly: they need 11 and 6 per cent more clean effort. Every other country
-needs at most three-fifths of the effort that produces its current progress. In this case the threshold
+and Japan fall short, and narrowly: they need 12 and 7 per cent more clean effort. Every other country
+needs at most about three-fifths of the effort that produces its current progress. In this case the threshold
 depends only on how fast emission intensity falls, and the habitat gap affects the size of the
 stationary population but not whether there is one.
 
 \emph{At the upper end of the range, the countries with the lowest fertility fall short.} With $\nu=0.5$,
 Korea needs more than five times its current effort equivalent, Japan two and a half times, China nearly twice
-and Italy two-fifths more. Germany, the United States, France, Sweden and the United Kingdom clear the
+and Italy almost half as much again. Germany, the United States, France, Sweden and the United Kingdom clear the
 threshold. The ranking follows the stationary population as much as current decoupling. China and Italy
-reduce emission intensity almost as fast as the United States, by 2.7 and 2.6 per cent a year against
-2.8, but their fertility is so far below replacement that their populations would settle at a tenth and a
+reduce emission intensity almost as fast as the United States, by 2.67 and 2.61 per cent a year against
+2.75, but their fertility is so far below replacement that their populations would settle at a tenth and a
 sixth of today's, and smaller populations do less clean research. Across the sensitivity range, then,
-Korea needs between 1.1 and 5.4 times its current effort equivalent, Japan between 1.1 and 2.5, China between 0.6
-and 1.8 and Italy between 0.6 and 1.4. Only at $\nu=1$, outside the sensitivity range, do Germany and the United States also fall
+Korea needs between 1.1 and 5.4 times its current effort equivalent, Japan between 1.1 and 2.6, China between 0.6
+and 1.9 and Italy between 0.6 and 1.5. Only at $\nu=1$, outside the sensitivity range, do Germany and the United States also fall
 short.
 
 \emph{Remediation helps, but little.} A remediation tax of 10 per cent of labour income raises the
@@ -1650,7 +1654,7 @@ none of the four shortfalls, consistent with Corollary~\ref{cor:threshold}: reme
 to cross the threshold. If quality acts on costs only, $\iota=0$, it is weaker still: the same tax raises
 the stationary population by 7 to 8 per cent and lowers the required effort by 3 to 4 per cent. The
 required efforts without remediation are 1 to 4 per cent higher than in Table~\ref{tab:thresholds}, for
-example $5.59$ for Korea and $2.59$ for Japan at $\nu=0.5$.
+example $5.64$ for Korea and $2.62$ for Japan at $\nu=0.5$.
 
 \emph{Transitions add to the requirement, and the trap unfolds slowly.} Simulated paths, which include
 the undershoot of population on the way to $L^\ast$, require up to a tenth more effort than
@@ -1734,8 +1738,8 @@ everything that currently sets each country's fertility apart from the model's b
 from migration and from age structure, and they apply to national aggregates a feedback estimated from
 variation across settlements. The cross-section also tells us nothing about how quickly tastes and costs
 adjust when habitat changes over time; Section~\ref{sub:caveats} notes that the habitat channel accounts
-for little of the observed decline in fertility. Reading current clean progress from the trend in emission
-intensity treats all of that trend as the equivalent of clean research, and the scale effect is not
+for little of the observed decline in fertility. Reading current clean progress from the decline in emission
+intensity treats all of that decline as the equivalent of clean research, and the scale effect is not
 identified; we report a sensitivity range. Read with these qualifications, the exercise delivers a quantitative answer to the question
 the paper poses. The habitat mechanism makes a stationary population the long-run outcome only where
 clean research clears a threshold, and where fertility is lowest that threshold is high, while the
@@ -1828,7 +1832,7 @@ lower, although reverse causality from fertility to emissions cannot be excluded
 
 Calibrated to these estimates, the model gives a sobering quantitative answer. Over a sensitivity range
 for the scale effect informed by cross-country evidence, Korea needs between 1.1 and 5.4 times the
-clean effort that produces its current measured clean progress, and Japan between 1.1 and 2.5; China and
+clean effort that produces its current measured clean progress, and Japan between 1.1 and 2.6; China and
 Italy fall short only at the upper end of the range, and the other economies we consider clear the
 threshold throughout. Where clean research clears the threshold, population settles only after large
 declines, and the lower the fertility, the larger the decline: at the within-country pollution
@@ -2875,8 +2879,11 @@ an environmental Empty Planet can exceed what any of these criteria would pay.
 \label{app:paths}
 \setcounter{table}{0}
 
+% TODO: rerun the country simulations with the compound rates g_int; the simulated columns
+% (TFR >= 2.0 by, 2083, 2143 and the 2383 values) still use the earlier conversion, about 1-3 per cent
+% more clean progress per generation.
 Table~\ref{tab:proj} reports simulated paths for all nine countries at current clean progress and without
-a scale effect, $\nu=0$, which is equivalent to continuing each country's 2005--2022 trend in emission
+a scale effect, $\nu=0$, which is equivalent to continuing each country's 2005--2022 rate of change in emission
 intensity. They illustrate the mechanism and should not be read as forecasts. For the seven countries that clear the threshold, the long-run levels coincide with the stationary
 populations $L^\ast$ of Table~\ref{tab:thresholds}. Korea and Japan lie just below the threshold at
 $\nu=0$ and do not settle; for them the table reports the population in 2383. The dates depend in addition on how quickly tastes and the
@@ -2897,22 +2904,22 @@ States and the United Kingdom, and only in the 23rd century in Italy and East As
 \cmidrule(lr){7-9}
  & 2023 & \% a year & & & by & 2083 & 2143 & long run\\
 \midrule
-Korea          & 0.72 & $-1.67$ & 5.3  & 37.8 & 2293 & 0.18 & 0.09 & 0.04$^\dagger$\\
-China          & 1.00 & $-2.71$ & 8.7  & 16.5 & 2263 & 0.30 & 0.18 & 0.10\\
-Japan          & 1.21 & $-1.73$ & 5.5  & 9.2  & 2263 & 0.40 & 0.25 & 0.16$^\dagger$\\
-Italy          & 1.20 & $-2.64$ & 8.4  & 9.4  & 2233 & 0.40 & 0.26 & 0.17\\
-Sweden         & 1.43 & $-4.09$ & 13.1 & 5.1  & 2173 & 0.54 & 0.42 & 0.32\\
-Germany        & 1.44 & $-3.18$ & 10.2 & 5.0  & 2173 & 0.54 & 0.41 & 0.32\\
-United Kingdom & 1.56 & $-4.70$ & 15.0 & 3.7  & 2143 & 0.63 & 0.53 & 0.44\\
-United States  & 1.62 & $-2.79$ & 8.9  & 3.1  & 2143 & 0.65 & 0.54 & 0.51\\
-France         & 1.64 & $-3.08$ & 9.8  & 3.0  & 2143 & 0.67 & 0.57 & 0.54\\
+Korea          & 0.72 & $-1.66$ & 5.3  & 37.8 & 2293 & 0.18 & 0.09 & 0.04$^\dagger$\\
+China          & 1.00 & $-2.67$ & 8.5  & 16.5 & 2263 & 0.30 & 0.18 & 0.10\\
+Japan          & 1.21 & $-1.71$ & 5.5  & 9.2  & 2263 & 0.40 & 0.25 & 0.16$^\dagger$\\
+Italy          & 1.20 & $-2.61$ & 8.3  & 9.4  & 2233 & 0.40 & 0.26 & 0.17\\
+Sweden         & 1.43 & $-4.01$ & 12.8 & 5.1  & 2173 & 0.54 & 0.42 & 0.32\\
+Germany        & 1.44 & $-3.13$ & 10.0 & 5.0  & 2173 & 0.54 & 0.41 & 0.32\\
+United Kingdom & 1.56 & $-4.59$ & 14.7 & 3.7  & 2143 & 0.63 & 0.53 & 0.44\\
+United States  & 1.62 & $-2.75$ & 8.8  & 3.1  & 2143 & 0.65 & 0.54 & 0.51\\
+France         & 1.64 & $-3.03$ & 9.7  & 3.0  & 2143 & 0.67 & 0.57 & 0.54\\
 \midrule
 \multicolumn{9}{l}{No further decoupling (all countries): population declines indefinitely, by $0.41$ per cent a year in the limit}\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
-\item Trend scenario: emission intensity $g_{\text{int}}$ continues at its 2005--2022 rate (CO$_2$ per unit
-of GDP, Global Carbon Budget via Our World in Data); TFR from UN WPP 2024. $\epsilon^\ast$ is the habitat
+\item Emission intensity $g_{\text{int}}$ continues at its average annual rate of change over 2005--2022
+(CO$_2$ per unit of GDP; Global Carbon Budget emissions and Maddison Project GDP, via Our World in Data); TFR from UN WPP 2024. $\epsilon^\ast$ is the habitat
 per capita, relative to 2023, at which fertility reaches replacement. ``Long run'' is the stationary
 population $Q_\infty/\epsilon^\ast$ of Proposition~\ref{prop:decoupling}(i). $\hat\zeta=-\zeta^\ast g_{\text{int}}/g_y$ expresses current clean progress as a
 rate of decoupling, against the threshold $\zeta^\ast=5.88$. $^\dagger$Korea and Japan lie
@@ -2933,8 +2940,9 @@ unrelated to country size once income is held fixed, the cross-country elasticit
 respect to population identifies $\nu$.
 
 We measure clean progress as in Section~\ref{sub:recal}, $g_{B,i}=(1+g_{\text{int},i})^{-30}-1$, where
-$g_{\text{int},i}$ is the annual change in carbon-dioxide emissions per unit of GDP, for all countries with
-more than one million people (Global Carbon Budget via Our World in Data). We report two specifications.
+$g_{\text{int},i}$ is the average annual rate of change in carbon-dioxide emissions per unit of GDP, for
+all countries with more than one million people (Global Carbon Budget emissions and Maddison Project GDP,
+via Our World in Data). We report two specifications.
 The first regresses $\ln g_{B,i}$ on log population, which requires $g_{B,i}>0$ and so drops the quarter of
 countries whose emission intensity rose. The second keeps every country: it regresses the annual decline
 in emission intensity, in levels, on log population and divides the coefficient by the mean decline. Both
@@ -2952,7 +2960,7 @@ production to poorer countries, and for population growth over the period.
 \cmidrule(lr){3-5}\cmidrule(lr){6-8}
 Period & Sample & $\hat\nu$ & s.e. & $N$ & $\hat\nu$ & s.e. & $N$\\
 \midrule
-2005--2022 & All          & $-0.08$ & 0.06 & 110 & $0.09$  & 0.10 & 149\\
+2005--2022 & All          & $-0.08$ & 0.06 & 110 & $0.10$  & 0.11 & 149\\
            & Richest 40\% & $-0.14$ & 0.09 & 58  & $-0.09$ & 0.05 & 60\\
 1995--2022 & All          & $-0.10$ & 0.07 & 111 & $0.02$  & 0.08 & 147\\
            & Richest 40\% & $-0.26$ & 0.08 & 55  & $-0.12$ & 0.07 & 59\\
@@ -2962,7 +2970,7 @@ Period & Sample & $\hat\nu$ & s.e. & $N$ & $\hat\nu$ & s.e. & $N$\\
 \item OLS across countries with more than one million people at the start of the period, controlling for
 log GDP per person at the start and population growth over the period; heteroskedasticity-robust standard
 errors. Column (2) divides the coefficient on log population by the mean annual decline in emission
-intensity (for 2005--2022 and 1995--2022, 1.1 and 1.4 per cent a year for all countries, 2.8 and 2.6 for the
+intensity (for 2005--2022 and 1995--2022, 1.0 and 1.4 per cent a year for all countries, 2.8 and 2.5 for the
 richest 40 per cent). Samples by
 GDP per person at the start of the period.
 \end{tablenotes}
@@ -2970,8 +2978,8 @@ GDP per person at the start of the period.
 \end{table}
 
 Table~\ref{tab:nu} reports the results. No specification finds that larger countries decouple faster.
-The point estimates lie between $-0.26$ and $0.09$, and the largest value inside any 95 per cent
-confidence interval is $0.29$. A national scale effect of $0.5$ or more is therefore hard to reconcile with
+The point estimates lie between $-0.26$ and $0.10$, and the largest value inside any 95 per cent
+confidence interval is $0.31$. A national scale effect of $0.5$ or more is therefore hard to reconcile with
 the data.
 
 Three qualifications limit what the test can show. First, research intensity may vary with size: small

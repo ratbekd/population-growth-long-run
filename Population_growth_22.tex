@@ -880,7 +880,7 @@ are not fielded in every wave.} Habitat is proxied by \texttt{X049}, an eight-ca
 the size of the respondent's town with thresholds at 2{,}000, 5{,}000, 10{,}000, 20{,}000,
 50{,}000, 100{,}000 and 500{,}000 inhabitants. Desired fertility is \texttt{D017}, the ideal number
 of children; realised fertility is \texttt{X011}, children ever had, top-coded at five. Controls
-are age, sex, marital status, religiosity and, with the reservation noted below, education
+are age, sex, marital status, religious attendance and, with the reservation noted below, education
 and income.
 
 Wave coverage is the binding constraint, and it differs sharply between the two fertility measures.
@@ -934,7 +934,7 @@ $\{\hat b_k\}$ against bin.
 \includegraphics[width=\textwidth]{fig_gradient.pdf}
 \caption{Fertility by settlement size. Coefficients $\hat b_k$ from \eqref{eq:gradient_spec}
 with the smallest settlement ($<2{,}000$) as the omitted category and 95\% confidence intervals,
-country$\times$wave fixed effects, controlling for age, sex, marital status and religiosity.
+country$\times$wave fixed effects, controlling for age, sex, marital status and religious attendance.
 Panel (a) is the ideal number of children (\texttt{D017}, WVS waves 2--4); panel (b) is children
 ever had (\texttt{X011}) for respondents aged 45--70. Survey-weighted; standard errors clustered
 at the country--wave level.}
@@ -954,7 +954,7 @@ realised fertility, a compression of roughly a fifth in each case. We therefore 
 specification without them as the headline and the attenuation alongside it rather than in its
 place.
 
-We stress what none of this establishes. Because every mechanism in Table~\ref{tab:fingerprints} generates the same pattern,
+We stress what none of this establishes. Because every taste and cost channel in Table~\ref{tab:fingerprints} generates the same pattern,
 Figure~\ref{fig:gradient} is a motivating fact and not a test. Nor are settlement bins a measure of
 $\epsilon_t=E_t/L_t$: they order respondents by the population of their locality, not by habitat per
 person, and they do so in the cross-section rather than along the aggregate time path the model
@@ -964,7 +964,7 @@ generate the gradient. Neither addresses the aggregate time path, to which
 Appendix~\ref{app:crosscountry} returns.
 
 %% -------------------------------------------------------------
-\subsection{Estimating $\xi$ by inverting the fertility rule}
+\subsection{Inverting the fertility rule}
 \label{sub:xi}
 %% -------------------------------------------------------------
 
@@ -1156,7 +1156,7 @@ the same top-code of five to both measures. To the World Values Survey (waves 2-
 European Values Study trend file, whose 1990 wave asks about ideal fertility in 29 European countries.
 Of these, 23 enter the sample: we drop two surveys that the World Values Survey already contains
 (Czechoslovakia and Spain), three that lack size of town (Finland, Iceland and Lithuania) and one
-that lacks religiosity (Estonia). Sweden's 1999 survey, the only later one that asks about ideal
+that lacks religious attendance (Estonia). Sweden's 1999 survey, the only later one that asks about ideal
 fertility, adds a twenty-fourth; its interviews enter through the European file only, since the World
 Values Survey file contributes none of them. The pooled sample covers 99 country--waves, 75 from the World Values
 Survey and 24 from the European survey; the 75 are the 77 of Section~\ref{sub:data} less China 1995 and
@@ -1188,8 +1188,8 @@ of stated ideals as a taste measure, the point estimate attributes about 54 per 
 gradient to tastes and the remainder to costs, and their combined strength lies far below the oscillation threshold of
 Proposition~\ref{prop:two_channels}. If stated ideals partly internalise the costs respondents
 expect to face, $\hat\varpi$ overstates the taste share and \eqref{eq:decomp_estimate} is an upper
-bound for $\xi$; if ideals are measured with more error than realised fertility, it understates
-it.
+bound for $\xi$; if reported ideals are compressed towards a common norm, such as two children, it
+understates it.
 
 \paragraph{Habitat in childhood.}
 A cost of children is paid where children are raised, whereas a taste may be formed where the
@@ -1361,9 +1361,11 @@ Values Survey completed fertility rises with it at $0.096$, or $0.139$ when loca
 controlled, so that the pollution load and settlement size enter together. Within countries the
 association is absent over the whole period but appears after 1990, at $0.068$ (s.e.\ $0.016$), the
 years in which the emission series is most reliable and environmental regulation most varied. The
-crowding coefficient is the effect of density beyond its contribution to the load; across countries it
-is absorbed by the load, while within countries it carries the demographic-transition component noted
-in Section~\ref{sub:xi}.
+crowding coefficient is the effect of density beyond its contribution to the load. Across countries in
+the UN panel it is absorbed by the load, while within countries it carries the demographic-transition
+component noted in Section~\ref{sub:xi}. In the World Values Survey it is negative, and significantly so
+once local habitat is controlled, so that density beyond the load goes with higher, not lower,
+completed fertility there.
 
 Stated ideals tell a different story. Ideal fertility does not respond to the national pollution load,
 with coefficients of $0.027$ and $0.014$, neither distinguishable from zero. It does respond to national

@@ -329,7 +329,9 @@ B_{t+1}=\left(1+\delta_B R_tL_t^{\nu}\right)B_t,
 Clean progress depends on the effort devoted to it, $R_t$, and, when $\nu>0$, on the size of the
 population, and hence on the number of clean researchers. With $\nu=0$ it depends on research intensity alone, as in
 growth models without scale effects; with $\nu=1$ it is proportional to the number of clean
-researchers, $R_tL_t$, as in the scale-effect models of \citet{romer1990} and \citet{jones1995}. Because
+researchers, $R_tL_t$, as in \citet{romer1990}. In the semi-endogenous models of \citet{jones1995} the
+number of researchers raises the level of knowledge rather than its growth rate, a case that
+Section~\ref{sub:semiendog} takes up. Because
 adults within a generation share the same human capital, $R_t$ is both the share of effective labour
 and the share of workers in clean research, and the scale effect counts researchers by headcount.
 A common shortcut lets pressure per unit of output fall at an exogenous rate tied to knowledge,
@@ -350,6 +352,7 @@ quality of a habitat under no pressure. The government taxes labour income at th
 spends the revenue $\tau_r w_tH_t$ on remediation, which restores quality at given pressure, and with the
 revenue $Rw_tH_t$ it hires the share $R$ of effective labour at the market wage for clean research. The
 clean-research share therefore equals its tax rate, and both instruments are financed in the same way.
+From here on we hold the clean-research share constant, $R_t=R$.
 
 \subsection{Households}
 Adults value consumption $c_t$, the number of their children $b_t$ and the human capital of their
@@ -444,9 +447,9 @@ $J_t\equiv1-\alpha'(\epsilon_t)\,\bar E\,\mathcal{Q}_P\,A_t^{\sigma}(1-R)h_t\ell
 \begin{proposition}[Within-period effects]
 \label{prop:tax}
 \begin{enumerate}
-\item[(i)] A more productive, better educated or larger population crowds the habitat and lowers
-habitat per capita and fertility, and does not raise the taste for children; a larger stock of clean
-knowledge has the opposite effects.
+\item[(i)] A more productive or better educated population raises the pressure on the habitat, and a
+larger one also crowds it; each lowers habitat per capita and fertility and does not raise the taste for
+children. A larger stock of clean knowledge has the opposite effects.
 \item[(ii)] Remediation raises habitat per capita and fertility:
 \begin{align}
 \frac{\partial\ln n_t}{\partial\tau_r}=\big[\mathcal{K}(\alpha_t)\,\xi+\chi\big]\,
@@ -537,7 +540,7 @@ If $(1+\sigma)\theta<1$, idea growth converges to its lower bound $\underline g_
 \end{proposition}
 
 \begin{proof}
-Write $a_t=\ln A_t$, $b_t=\ln h_t$ and $z_t=b_t-a_t$. Then
+Write $a_t=\ln A_t$, $x_t=\ln h_t$ and $z_t=x_t-a_t$. Then
 $z_{t+1}=\text{const}+\theta z_t+[(1+\sigma)\theta-1]a_t-\ln(1+g_{A,t})$. Since $g_{A,t}\ge\underline g_A>0$,
 $a_t\to\infty$, and since $0<\theta<1$, the sign of $(1+\sigma)\theta-1$ decides whether $z_t$ diverges to
 plus or minus infinity. Applying \eqref{eq:gA_logistic} gives the limits.
@@ -749,23 +752,23 @@ a condition on technology.
 
 \begin{proposition}[Semi-endogenous clean knowledge]
 \label{prop:semiendog}
-Let $k\equiv\lambda_c/\beta_c$. A stationary population with growing output exists if and only if
-$k\theta\ge1$, whatever the research share. If $k\theta<1$, population declines at
+Let $k_c\equiv\lambda_c/\beta_c$. A stationary population with growing output exists if and only if
+$k_c\theta\ge1$, whatever the research share. If $k_c\theta<1$, population declines at
 \[
-\ln\tilde n=-\frac{\mu\,\zeta^\ast\ln(1+\bar g_A)\,(1-k\theta)}{1+\mu(1-k)} .
+\ln\tilde n=-\frac{\mu\,\zeta^\ast\ln(1+\bar g_A)\,(1-k_c\theta)}{1+\mu(1-k_c)} .
 \]
 \end{proposition}
 
 \begin{proof}
-Along a balanced path with constant $R$, $1+g_B=[\tilde n(1+g_h)]^{k}$ and, at the saturated limit,
+Along a balanced path with constant $R$, $1+g_B=[\tilde n(1+g_h)]^{k_c}$ and, at the saturated limit,
 $1+g_h=(1+\bar g_A)^{\sigma\theta/(1-\theta)}$. Pressure stays bounded at $\tilde n=1$ if and only if
-$k\sigma\theta/(1-\theta)\ge\zeta^\ast$, that is $k\theta\ge1$. Otherwise, setting
+$k_c\sigma\theta/(1-\theta)\ge\zeta^\ast$, that is $k_c\theta\ge1$. Otherwise, setting
 $[(1+\bar g_A)^{\zeta^\ast}\tilde n/(1+g_B)]^{-\mu}=\tilde n$ and solving gives the rate.
 \end{proof}
 
 Under this law no permanent policy moves the threshold, since $R$ changes only the level of clean
-knowledge, and with the returns used for general ideas, $k=\lambda/\beta=0.375$, the condition
-$k\ge1/\theta=1.20$ fails. Decline is also faster than if clean progress did not depend on the size of
+knowledge, and with the returns used for general ideas, $k_c=\lambda/\beta=0.375$, the condition
+$k_c\ge1/\theta=1.20$ fails. Decline is also faster than if clean progress did not depend on the size of
 the research workforce, for which the denominator would be $1+\mu$. Whether a stationary population is a policy outcome thus
 depends on whether clean innovation is fully or semi-endogenous, a question on which the evidence on
 green innovation, rather than on fertility, will have to decide.
@@ -1864,7 +1867,8 @@ $\kappa_t\ge 0$ and a price $p_t>0$ for education goods, so that \eqref{eq:budge
 w_t h_t\left(1-\phi n_t-s_t n_t\right)=c_t+\left(p_t q_t+\kappa_t\right)n_t .
 \label{eq:budget_general}
 \end{align}
-Let $\alpha_t>\Gamma$ and write $W_t\equiv w_t h_t$. Then the consumption share, total education
+Let $\alpha_t>\Gamma$ and write $W_t\equiv w_t h_t$, which, without taxes, is the full income of
+Proposition~\ref{prop:hab_solution}. Then the consumption share, total education
 time and total education spending share depend on $\alpha_t$ alone,
 \begin{align}
 \frac{c_t}{W_t}=\frac{1}{1+\alpha_t},

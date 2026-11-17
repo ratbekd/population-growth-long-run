@@ -16,3 +16,7 @@ __pycache__/
 .env
 Datafiles/
 replication/data/
+
+!revised/fig_threshold.pdf
+!revised/fig_gradient.pdf
+!revised/fig_transitions.pdf

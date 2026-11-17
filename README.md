@@ -4,7 +4,7 @@ Private working repository containing the manuscript source, empirical analysis 
 
 ## Contents
 
-- `revised/`: LaTeX source, bibliography and WVS figure. This is the working revision developed in this chat, not a claim to be the latest manuscript elsewhere on the author's computer.
+- `revised/`: Author-supplied manuscript `Population_growth_22.tex`, matching `resources.bib`, and the three existing PDF figures referenced by that manuscript. The older version-3.8 manuscript remains available in Git history. The PNG figure is retained as an earlier replication output.
 - `replication/`: WVS and CEX preparation/audit programs, original analysis scripts and reports.
 - `replication/results/`: aggregate estimates, sample counts, bootstrap diagnostics and simulated coefficient draws. No respondent-level extracts are included.
 - `data/`: acquisition instructions and input checksums. Raw and prepared datasets remain local.
@@ -15,4 +15,5 @@ WVS version-5 headline gradients and structural-cell regressions have been rerun
 
 The scripts currently contain machine-specific paths. Configure those paths before running them; see replication/README.md. This is a research work-in-progress, not yet a portable one-command replication package.
 
-PDF compilation is performed only on explicit request. No PDFs or automatic compilation workflow are included. No open-source or data redistribution license is granted by this upload.
+PDF compilation is performed only on explicit request. Existing PDF figure assets are included; no compiled manuscript PDF or automatic compilation workflow is included. No open-source or data redistribution license is granted by this upload.
+

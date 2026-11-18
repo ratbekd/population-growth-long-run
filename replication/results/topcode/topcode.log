@@ -1,0 +1,26 @@
+1. SHARE AT OR ABOVE THE CAP, panel A sample, ages 45-70 (weighted)
+  pooled  N= 40334 | X011>=5: 0.142  X011>=4: 0.251  X011>=3: 0.442  D017>=5: 0.062  D017>=4: 0.178  D017>=3: 0.480
+  WVS     N= 29971 | X011>=5: 0.163  X011>=4: 0.279  X011>=3: 0.468  D017>=5: 0.073  D017>=4: 0.192  D017>=3: 0.495
+  EVS     N= 10363 | X011>=5: 0.082  X011>=4: 0.171  X011>=3: 0.366  D017>=5: 0.031  D017>=4: 0.136  D017>=3: 0.437
+  WVS codes X011 as 0-4 and '5 or more'; EVS records exact counts to 8.
+  country-waves: 99; median share X011>=5 0.098, max 0.685; median share D017>=5 0.042, max 0.673
+
+2. VARPI-HAT UNDER ALTERNATIVE CAPS (PPML, pooled WVS + EVS)
+  both measures capped at 5  (baseline)        N= 40334 cw= 99 | ideal +0.0148(0.0019) realised +0.0274(0.0026) varpi 0.540 [0.413,0.693]
+  both measures capped at 4                    N= 40334 cw= 99 | ideal +0.0124(0.0015) realised +0.0235(0.0024) varpi 0.526 [0.409,0.678]
+  both measures capped at 3                    N= 40334 cw= 99 | ideal +0.0080(0.0011) realised +0.0178(0.0020) varpi 0.449 [0.332,0.602]
+  ideal uncapped (<=8), realised capped at 5   N= 40334 cw= 99 | ideal +0.0170(0.0022) realised +0.0274(0.0026) varpi 0.621 [0.464,0.805]
+  WVS only, both capped at 5                   N= 29971 cw= 76 | ideal +0.0166(0.0023) realised +0.0282(0.0028) varpi 0.589 [0.458,0.736]
+  WVS only, both capped at 4                   N= 29971 cw= 76 | ideal +0.0136(0.0019) realised +0.0237(0.0027) varpi 0.575 [0.440,0.728]
+
+3. COUNTRY-WAVES WITH < 5% AT THE TOP CODE, both capped at 5
+  X011 >= 5 below 5%: 31 of 99 country-waves (24 WVS, 7 EVS)
+  X011 >= 5 and D017 >= 5 both below 5%: 24 country-waves
+  X011 top-code share < 5%                     N= 14360 cw= 31 | ideal +0.0121(0.0016) realised +0.0356(0.0029) varpi 0.340 [0.245,0.431]
+  X011 and D017 top-code shares < 5%           N= 11359 cw= 24 | ideal +0.0118(0.0019) realised +0.0357(0.0029) varpi 0.330 [0.221,0.418]
+
+4. TOP CATEGORY TREATED AS RIGHT-CENSORED, [c, inf), instead of capped
+  censored Poisson, censored at 5              N= 40334 cw= 99 | ideal +0.0171(0.0023) realised +0.0324(0.0031) varpi 0.526 [0.404,0.650]
+  censored Poisson, censored at 4              N= 40334 cw= 99 | ideal +0.0174(0.0023) realised +0.0316(0.0033) varpi 0.549 [0.425,0.691]
+  censored Poisson, censored at 3              N= 40334 cw= 99 | ideal +0.0190(0.0026) realised +0.0316(0.0034) varpi 0.601 [0.457,0.745]
+  Gaussian interval regression, censored at 5  N= 40334 cw= 99 | ideal +0.0157(0.0021) realised +0.0301(0.0029) varpi 0.522 [0.405,0.645]

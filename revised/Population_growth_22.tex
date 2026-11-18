@@ -657,8 +657,12 @@ taxes enter \eqref{eq:h_tax_dyn} only through the constant factor $(1-\tau)^{\th
 \end{proof}
 
 The threshold $R^\ast$ is a bound: a share above it makes the stationary equilibrium exist and attract
-nearby paths, and a share below it rules out a stationary population. Proposition~\ref{prop:threshold}
-does not cover the boundary case $R=R^\ast$, which we leave aside.
+nearby paths, and a share below it rules out a stationary population. At equality, $R=R^\ast$, clean
+progress at $L^\ast$ exactly offsets the growth of output, so pressure stops rising but does not fall:
+habitat does not reach $\bar EQ_\infty(\tau_r)$, and a population that settles does so below $L^\ast$.
+Proposition~\ref{prop:threshold} does not characterise this non-generic case. Throughout, a share
+that clears the threshold is one strictly above it, and the requirements we report are bounds in that
+sense.
 By Proposition~\ref{prop:threshold}(iii), an economy that starts far from $L^\ast$ can need more clean
 research to get there; Section~\ref{sub:illustration} measures the difference. Three features of the corollary deserve emphasis. First, because clean knowledge is assumed to earn
 no private return, the market supplies no clean research, so a stationary population is a policy outcome. Second, without a scale effect, remediation and clean
@@ -1526,7 +1530,8 @@ Table~\ref{tab:recal} lists the parameters. The household and technology paramet
 Section~\ref{sub:illustration}. Four sets of parameters govern the habitat block and clean technology.
 
 \emph{Feedback strength and its composition.} The feedback strength is set to the survey estimate
-$\hat S=0.209$ and split between tastes and costs with the ideal-fertility share $\hat\varpi=0.54$
+$\hat S=0.209$, implied under the maintained conversion from settlement size to habitat per capita, and
+split between tastes and costs with the ideal-fertility share $\hat\varpi=0.54$
 (Section~\ref{sub:prefs}). Writing $\alpha(\epsilon)=\alpha_i\epsilon^{\xi}$ and
 $\phi(\epsilon)=\phi_0\epsilon^{-\chi}$, where $\phi$ stands for the full cost of a child
 (Corollary~\ref{cor:goods}), the taste elasticity solves $\mathcal{K}(\alpha^\ast)\xi=\hat\varpi\hat S$
@@ -1658,10 +1663,11 @@ France         & 1.64 & $-3.03$ & 3.0 & 0.54 & 0.48 & 0.65 & 0.89 & 0.60\\
 \item $g_{\text{int}}$: average annual rate of change in CO$_2$ per unit of GDP, 2005--2022 (Global Carbon
 Budget emissions and Maddison Project GDP, via Our World in Data); TFR from UN WPP 2024. $\epsilon^\ast$: habitat per capita, relative to 2023, at which fertility
 reaches replacement. $L^\ast=Q_\infty/\epsilon^\ast$: stationary population relative to 2023 when clean
-research clears the threshold. $m^\ast$: clean research needed for a stationary population, relative to
+research exceeds the threshold. $m^\ast$: clean research needed for a stationary population, relative to
 the effort that would produce the country's current measured clean progress, from \eqref{eq:m_star};
 values above one mean that the current equivalent falls short, and the results apply to effort
-strictly above $m^\ast$. Thresholds for a stationary equilibrium;
+strictly above $m^\ast$; at $m^\ast$ itself pressure stops rising without falling (see the discussion after
+Corollary~\ref{cor:threshold}). Thresholds for a stationary equilibrium;
 transitions from 2023 need up to a tenth more (Section~\ref{sub:proj}). Without remediation unless stated.
 \item[a] Outside the sensitivity range $0\le\nu\le0.5$ (Section~\ref{sub:recal} and Appendix~\ref{app:nu}).
 \end{tablenotes}
@@ -1700,7 +1706,10 @@ the undershoot of population on the way to $L^\ast$, require up to a tenth more 
 \eqref{eq:m_star} in the countries that start closest to replacement. A country below the threshold,
 by contrast, does not decline visibly faster at first: at the current effort equivalent, population in 2143 differs
 by less than three per cent between $\nu=0.5$ and $\nu=0$. The difference lies in the limit, where a country
-below the threshold declines indefinitely, at $0.41$ per cent a year, instead of settling.
+below the threshold declines indefinitely instead of settling: with a scale effect, $\nu>0$, clean
+progress vanishes along the decline and population falls at the rate without any decoupling, $0.41$ per
+cent a year; without one, it falls at a rate set by its current clean progress, which for Korea and
+Japan is $0.04$ and $0.02$ per cent a year (Appendix~\ref{app:paths}).
 Figure~\ref{fig:transitions} shows the paths.
 
 \begin{figure}[h!]\centering
@@ -1719,7 +1728,7 @@ Where clean research clears the threshold, population settles at $L^\ast$: about
 France and the United States, a third in Germany and Sweden, a sixth in Japan and Italy, and a few per cent
 in Korea. These levels do not depend on the scale effect or on how quickly tastes and costs adjust, although, as
 Table~\ref{tab:sens} shows, they depend strongly on the feedback strength and the pollution elasticity.
-Because the feedback is weak, $S=0.21$, the habitat gain that fertility needs is large: habitat per capita
+Because the calibrated feedback is weak, $S=0.21$, the habitat gain that fertility needs is large: habitat per capita
 must roughly treble in France and the United States, increase ninefold in Japan and Italy, and rise almost
 fortyfold in Korea.
 
@@ -1858,7 +1867,8 @@ sustainable once reached. Remediation of environmental quality raises the size o
 population; it supports decoupling only through the scale effect, and weakly. Neither clean research
 nor remediation changes the long-run growth rate, which is set by the ceiling of Strulik's bounded law.
 Whether either is worth its cost depends on how population is valued: an average-utilitarian planner
-chooses neither unless the environment is valued directly, whereas a total-utilitarian planner chooses
+chooses neither unless the environment is valued directly and, for remediation, the tax spares
+education spending, whereas a total-utilitarian planner chooses
 both, except where fertility is lowest and the scale effect strong.
 
 The evidence is consistent with the central premise, although it is associational. Fertility is
@@ -2953,7 +2963,7 @@ United Kingdom & 1.56 & $-4.59$ & 14.7 & 3.7  & 2143 & 0.63 & 0.53 & 0.44\\
 United States  & 1.62 & $-2.75$ & 8.8  & 3.1  & 2143 & 0.65 & 0.54 & 0.51\\
 France         & 1.64 & $-3.03$ & 9.7  & 3.0  & 2143 & 0.67 & 0.57 & 0.54\\
 \midrule
-\multicolumn{9}{l}{No further decoupling (all countries): population declines indefinitely, by $0.41$ per cent a year in the limit}\\
+\multicolumn{9}{l}{Zero clean progress, $\zeta=0$ (all countries): population declines indefinitely, by $0.41$ per cent a year in the limit}\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
@@ -2963,7 +2973,10 @@ per capita, relative to 2023, at which fertility reaches replacement. ``Long run
 population $Q_\infty/\epsilon^\ast$ of Proposition~\ref{prop:decoupling}(i). $\hat\zeta=-\zeta^\ast g_{\text{int}}/g_y$ expresses current clean progress as a
 rate of decoupling, against the threshold $\zeta^\ast=5.88$. $^\dagger$Korea and Japan lie
 just below the threshold; the entry is the 2383 value, after which population declines towards the
-asymptotic rates of Proposition~\ref{prop:threshold}(ii), $0.04$ and $0.02$ per cent a year. Rows are ordered by long-run population.
+asymptotic rates of Proposition~\ref{prop:threshold}(ii), $0.04$ and $0.02$ per cent a year, at
+their current clean progress. The last row is a different scenario, with clean progress set to zero:
+the rate $\tilde n_0$ of Proposition~\ref{prop:threshold}(ii), which is also the limit for any country
+below the threshold when $\nu>0$. Rows are ordered by long-run population.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}

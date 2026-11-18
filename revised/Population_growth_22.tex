@@ -158,8 +158,8 @@ consider favours crossing it (Section~\ref{sec:policy}, Appendix~\ref{sub:welfar
 \item \emph{Evidence.} Fertility is positively associated with proxies for habitat per capita in four
 surveys and a panel of 161 countries, and, under the maintained conversion from settlement size to
 habitat, the implied feedback strength, $\hat S\approx0.21$, lies well inside the stable region. Stated
-ideal fertility rises with habitat at a little over half the rate of realised fertility, pointing to a
-role for preferences alongside costs. At a given density and income, fertility is higher where the
+ideal fertility rises with habitat at a little over half the rate of realised fertility (about a third
+in low-fertility European samples), pointing to a role for preferences alongside costs. At a given density and income, fertility is higher where the
 pollution load is lower, while stated ideals show no detectable response to pollution, suggesting that
 pollution acts mainly through costs. The evidence is associational: it documents the correlations the mechanism
 predicts, not causal effects (Section~\ref{sec:empirics}).
@@ -920,7 +920,8 @@ measure is therefore confined to a historical window while realised fertility is
 reason we build the structural estimate of Section~\ref{sub:xi} on \texttt{X011}. The exercises that
 pool the World Values Survey with the European Values Study and with national data, in
 Sections~\ref{sub:prefs} and~\ref{sub:pollution}, use the earlier version 4.0 of the trend file and
-version 3.0 of the European Values Study.
+version 3.0 of the European Values Study; the checks on the top-code in Section~\ref{sub:prefs} use
+version 5.0.
 
 Three further features constrain the design. First, \texttt{X049} is suppressed for data protection
 in EVS 2008 and EVS 2017, so those waves cannot contribute if the European file is appended; they
@@ -1205,7 +1206,7 @@ rationalisation would produce.
 A second concern is the top-code. The World Values Survey records children ever had only up to
 ``five or more'', and censoring need not affect the two measures equally: a respondent whose
 fertility is capped shows no response even if it still rises with habitat. In the pooled sample
-14 per cent of respondents sit at five or more children (16 per cent in the World Values Survey,
+14 per cent of respondents aged 45--70 sit at five or more children (16 per cent in the World Values Survey,
 8 per cent in the European file, and more than half in some high-fertility country--waves), against
 6 per cent at an ideal of five or more, so the cap compresses realised fertility more than the ideal
 and could bias $\hat\varpi$ upward. Treating the top category as right-censored instead of capping
@@ -1213,7 +1214,7 @@ it leaves the estimate essentially unchanged: a censored Poisson model, which ha
 conditional mean as the pseudo-likelihood estimator, gives $0.53$ $[0.40,\,0.65]$, and a Gaussian
 interval regression in levels gives $0.52$ $[0.41,\,0.65]$. Capping both measures at four gives
 $0.53$ and at three $0.45$; censoring at four or three gives $0.55$ and $0.60$.\footnote{These
-checks use the WVS Time Series v5.0, on which the baseline is $0.540$ $[0.413,\,0.693]$ with
+checks use version 5.0 of the World Values Survey trend file, on which the baseline is $0.540$ $[0.413,\,0.693]$ with
 $N=40{,}334$; \texttt{replication/topcode.py} reports them in full.} The estimate is lower,
 however, in the 31 country--waves in which fewer than 5 per cent of respondents report five or more
 children: $0.34$ $[0.25,\,0.43]$ (Table~\ref{tab:prefs}). These are all European, most of them
@@ -1221,8 +1222,7 @@ post-socialist surveys of the 1990s, with mean completed fertility of $1.9$ agai
 of the sample. Since the censored models correct for the top-code without moving the estimate, the
 difference reflects who is in that subsample rather than the top-code itself, and it matches the
 European sample's $0.38$. The taste share is therefore an average: about one half across the pooled
-sample, and closer to one third in the low-fertility populations whose future the model is mostly
-about.
+sample, and closer to one third in the low-fertility European samples.
 
 Combined with the feedback strength $\hat S=0.209$ of \eqref{eq:S_estimate}, $\hat\varpi$ delivers
 the decomposition \eqref{eq:decomposition} directly. With $\mathcal{K}=1.57$ at the sample mean
@@ -1333,7 +1333,8 @@ With local habitat, 61 countries          & $120{,}933$ & $0.0509$ $(0.0165)$ & 
 marital status and religious attendance. Panel~A: WVS waves 2--4 and EVS waves 1990 and 1999,
 country$\times$wave effects, both measures top-coded at five, bootstrap over country--waves.
 $^{a}$~The 31 country--waves in which fewer than 5 per cent of respondents report five or more
-children, all European; estimated on the WVS Time Series v5.0, on which the pooled baseline is $0.540$
+children, all European; estimated on version 5.0 of the World Values Survey trend file, on which the
+pooled baseline is $0.540$
 $[0.413,\,0.693]$. Panel~B: year effects and the controls of
 Table~\ref{tab:gss}; habitat is minus the log of size of place (current) or of a representative
 population for the type of place at 16; movers left the city in which they lived at 16; the
@@ -1865,7 +1866,8 @@ positively associated with proxies for habitat per capita across settlements in 
 in the European Values Study, in two US surveys and across 161 countries, and under the maintained
 conversion from settlement size to habitat the implied feedback lies well inside the stable region. A
 pure time-cost account is rejected within the maintained labour-supply specification, and stated ideals
-rise with habitat at about half the rate of realised fertility, consistent with a role for preferences.
+rise with habitat at about half the rate of realised fertility, and at about a third of it in
+low-fertility European samples, consistent with a role for preferences.
 At a given density and income, fertility is also higher where the pollution load on the habitat is
 lower, although reverse causality from fertility to emissions cannot be excluded.
 

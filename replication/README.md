@@ -34,3 +34,7 @@ The supplied WVS/EVS dictionary and merge syntax are metadata, not respondent da
 
 The dictionary places ideal number of children (`D017`) in WVS waves 1–4. The original plotting code restricts both ideal and realized fertility to waves 2–4; the text should state both restrictions. EVS should not be appended unless the analysis explicitly calls for it. GSS and WPP input datasets and the original WVS preprocessing cache remain unverified.
 
+
+## Our World in Data checks
+
+`owid_checks.py` reproduces every result in the manuscript that uses the Our World in Data CO2 file (`owid-co2-data.csv`, which carries Global Carbon Budget emissions and Maddison Project GDP): the compound emission-intensity rates and required clean effort of Table 5, the simulated country paths of Table D.1, the Section 5.2 simulation checks, the asymptotic decline rates for Korea and Japan, Table E.1, and the sample of Table 3, panel A. Run `python owid_checks.py path/to/owid-co2-data.csv`; it needs numpy and pandas only. The script uses the unrounded taste share (0.539) and pollution elasticity (0.068/0.289); with them it also reproduces the earlier version of Table 5 exactly and Table D.1 to the reported precision.

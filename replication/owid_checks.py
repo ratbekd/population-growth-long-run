@@ -8,6 +8,8 @@ Prints, for the manuscript in revised/:
   - simulated country paths without a scale effect (Table D.1);
   - the Section 5.2 simulation checks (transition premium, 2143 populations);
   - the asymptotic decline rates for Korea and Japan (Table D.1 note);
+  - the sensitivity of long-run population, Table 6 (all rows but quality in costs only), including the
+    taste share of the low-fertility European samples, varpi = 0.34, and its required clean effort;
   - the cross-country scale-effect regressions (Table E.1);
   - the sample of Table 3, panel A (country-years and countries).
 
@@ -79,6 +81,37 @@ def simulate(tfr, g_b, m=1.0, nu=0.0, generations=40, tau=0.0, r=2.0):
     return np.array(out)
 
 
+def table6(g_b):
+    """Table 6: L* = Q_inf / eps* (per cent of 2023) under alternative parameters; g_b by country for m*."""
+    global XI, CHI, MU, Q_INF
+    saved = XI, CHI, MU, Q_INF
+    order = ["Korea", "China", "Japan", "Italy", "Germany", "United States", "France"]
+    k = K(ALPHA_STAR)
+
+    def setp(xi=saved[0], chi=saved[1], e_q=E_Q, c0=C0):
+        global XI, CHI, MU, Q_INF
+        XI, CHI, MU = xi, chi, e_q * (1 + c0) / c0
+        Q_INF = (1 + c0) ** MU
+
+    rows = [("Baseline", S_HAT, {}), ("Taste only, xi=0.146", k * 0.146, dict(xi=0.146, chi=0.0)),
+            ("Taste share varpi=0.34", S_HAT, dict(xi=0.34 * S_HAT / k, chi=0.66 * S_HAT)),
+            ("Feedback doubled", 2 * S_HAT, dict(xi=2 * saved[0], chi=2 * saved[1])),
+            ("Pollution elasticity e_Q=1", S_HAT, dict(e_q=1.0)),
+            ("Maximum quality gain, c0=1", S_HAT, dict(c0=1.0)), ("Maximum quality gain, c0=9", S_HAT, dict(c0=9.0))]
+    print("Table 6: long-run population, per cent of 2023 (" + ", ".join(order) + ")")
+    for label, s, kw in rows:
+        setp(**kw)
+        L = [100 * Q_INF / eps_star(INVERT(COUNTRIES[c][1] / 2.1)) for c in order]
+        print(f"  {label:30} S {s:.2f}  " + " ".join(f"{v:5.1f}" for v in L))
+    setp(xi=0.34 * S_HAT / k, chi=0.66 * S_HAT)
+    print("  varpi=0.34: xi %.3f chi %.3f; required effort m* at nu = 0, 0.5, 1:" % (XI, CHI))
+    for name, (iso, tfr) in COUNTRIES.items():
+        L_star = Q_INF / eps_star(INVERT(tfr / 2.1))
+        m0 = (GY - 1) / g_b[name]
+        print(f"    {name:15} L* {L_star:.3f}  m* {m0:.2f} {m0 * L_star ** -0.5:.2f} {m0 / L_star:.2f}")
+    XI, CHI, MU, Q_INF = saved
+
+
 def ols_hc1(y, X):
     X = np.column_stack([np.ones(len(X)), X])
     y = np.asarray(y, dtype=float)
@@ -96,11 +129,13 @@ def main(path):
     g_b_star = GY - 1
 
     print("Tables 5 and D.1: compound rates, required effort and simulated paths")
+    g_b_all = {}
     for name, (iso, tfr) in COUNTRIES.items():
         d = owid[owid.iso_code == iso].set_index("year")
         intensity = d.co2 / d.gdp
         g_int = (intensity[2022] / intensity[2005]) ** (1 / 17) - 1
         g_b = (1 + g_int) ** -30 - 1
+        g_b_all[name] = g_b
         e_star = eps_star(INVERT(tfr / 2.1))
         L_star = Q_INF / e_star
         m0 = g_b_star / g_b
@@ -130,6 +165,8 @@ def main(path):
             rate = (1 + G_BAR) ** (MU * (zeta_r - ZETA_STAR) / (1 + MU))
             line += f", asymptotic decline {100 * (rate ** (1 / 30) - 1):.3f}% a year"
         print(line)
+
+    table6(g_b_all)
 
     print("Table E.1: elasticity of clean progress with respect to population")
     for a, b in [(2005, 2022), (1995, 2022)]:

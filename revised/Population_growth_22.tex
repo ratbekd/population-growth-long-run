@@ -658,9 +658,11 @@ taxes enter \eqref{eq:h_tax_dyn} only through the constant factor $(1-\tau)^{\th
 
 The threshold $R^\ast$ is a bound: a share above it makes the stationary equilibrium exist and attract
 nearby paths, and a share below it rules out a stationary population. At equality, $R=R^\ast$, clean
-progress at $L^\ast$ exactly offsets the growth of output, so pressure stops rising but does not fall:
-habitat does not reach $\bar EQ_\infty(\tau_r)$, and a population that settles does so below $L^\ast$.
-Proposition~\ref{prop:threshold} does not characterise this non-generic case. Throughout, a share
+progress at $L^\ast$ exactly offsets the growth of output, so pressure stops rising but does not fall,
+and habitat does not reach $\bar EQ_\infty(\tau_r)$. With $\nu=0$ a population can then settle, but
+below $L^\ast$; with $\nu>0$ none does, because below $L^\ast$ clean progress falls short of the
+threshold and pressure rises again. Proposition~\ref{prop:threshold} does not characterise this
+non-generic case. Throughout, a share
 that clears the threshold is one strictly above it, and the requirements we report are bounds in that
 sense.
 By Proposition~\ref{prop:threshold}(iii), an economy that starts far from $L^\ast$ can need more clean
@@ -1535,7 +1537,8 @@ split between tastes and costs with the ideal-fertility share $\hat\varpi=0.54$
 (Section~\ref{sub:prefs}). Writing $\alpha(\epsilon)=\alpha_i\epsilon^{\xi}$ and
 $\phi(\epsilon)=\phi_0\epsilon^{-\chi}$, where $\phi$ stands for the full cost of a child
 (Corollary~\ref{cor:goods}), the taste elasticity solves $\mathcal{K}(\alpha^\ast)\xi=\hat\varpi\hat S$
-and the cost elasticity is $\chi=(1-\hat\varpi)\hat S$, which gives $\xi=0.060$ and $\chi=0.096$. We
+and the cost elasticity is $\chi=(1-\hat\varpi)\hat S$, which gives $\xi=0.060$ and $\chi=0.096$;
+Table~\ref{tab:sens} also reports the lower taste share of the low-fertility European samples. We
 evaluate $\mathcal{K}$ at the baseline stationary taste $\alpha^\ast=0.432$ rather than at the sample mean
 of $\hat\alpha$ used in \eqref{eq:decomp_estimate}, because the feedback that governs stabilisation
 operates at the stationary point; at the sample mean the taste elasticity would be $0.072$. Because the
@@ -1749,6 +1752,7 @@ pollution elasticity of quality and on the maximum attainable gain, which Table~
 \midrule
 Baseline                                & 0.21 & 4.2 & 9.8 & 17.5 & 17.1 & 32.3 & 51.1 & 53.7\\
 Taste only, $\xi=0.146$ (Section~\ref{sub:illustration}) & 0.27 & 11.9 & 21.1 & 31.7 & 31.1 & 49.1 & 68.4 & 70.9\\
+Taste share $\varpi=0.34$ (Section~\ref{sub:prefs}) & 0.21 & 3.2 & 8.3 & 15.9 & 15.5 & 30.8 & 49.9 & 52.5\\
 Feedback doubled                        & 0.42 & 26.1 & 39.6 & 53.1 & 52.3 & 72.0 & 90.6 & 92.9\\
 Pollution elasticity $e_Q=1$            & 0.21 & 19.8 & 45.4 & 81.7 & 79.5 & 150.6 & 238.1 & 250.2\\
 Maximum quality gain 39\% ($c_0=1$)     & 0.21 & 3.7 & 8.4 & 15.1 & 14.7 & 27.9 & 44.1 & 46.4\\
@@ -1758,7 +1762,8 @@ Quality in costs only, $\iota=0$         & 0.21 & 3.9 & 9.2 & 16.7 & 16.2 & 31.2
 \end{tabular}
 \begin{tablenotes}\footnotesize
 \item Stationary population $Q_\infty/\epsilon^\ast$ relative to 2023, when clean research clears the
-threshold. ``Feedback doubled''
+threshold. ``Taste share $\varpi=0.34$'' keeps $S=0.209$ and splits it with the estimate for the
+low-fertility European country--waves of Table~\ref{tab:prefs}, $\xi=0.038$ and $\chi=0.138$. ``Feedback doubled''
 doubles both $\xi$ and $\chi$. The value $e_Q=1$ is illustrative: the cross-country estimates in Table~\ref{tab:pollution} pair a
 clear pollution coefficient with a density coefficient close to zero, so they point to values above the
 within-country $0.235$ without identifying one; with it the
@@ -1776,7 +1781,12 @@ between seventy and over ninety per cent of today's. The pollution elasticity ma
 within-country estimate, a cleaner environment offsets only a small part of the gap; at a larger value,
 such as $e_Q=1$, which the cross-country estimates do not rule out, ending pollution raises effective habitat enough to stabilise the United States and France at
 more than twice their current populations and Japan and Italy at four-fifths. The curvature parameter,
-which our data do not identify, moves the results by less than a sixth. Letting quality act on costs only,
+which our data do not identify, moves the results by less than a sixth. The split between tastes and
+costs matters little for a given feedback strength: at the taste share of the low-fertility European
+samples, $\varpi=0.34$, long-run population is 2 to 5 per cent lower in Germany, the United States
+and France, about a tenth lower in Japan and Italy, a sixth lower in China and a quarter lower in
+Korea, whose required clean effort at $\nu=0.5$ rises from $5.4$ to $6.2$ times its current
+equivalent. Letting quality act on costs only,
 with $e_Q$ recalibrated to the same reduced form, lowers long-run population by 3 to 7 per cent, as
 Proposition~\ref{prop:split} leads one to expect.
 
@@ -2629,8 +2639,9 @@ Table~\ref{tab:welfare} quantifies these results along the full transition of th
 from the model's baseline (a total fertility rate of $1.71$) and from Korea's starting point, with
 $\nu=0.5$, clean research at $1.25$ times its threshold in both cases, an annual discount rate of one per
 cent, and the remediation technology of Section~\ref{sub:illustration}, $Q_\infty(\tau)\propto1+2\tau$.
-Because Korea's stationary population is small, its threshold is high: clean research takes $2.5$ per cent
-of effective labour at the baseline and $9.7$ per cent in Korea. For the Benthamite criterion we follow \citet{adhami2024}, who calibrate the intercept of log flow
+Because Korea's stationary population is small, its threshold is high: clean research at $1.25$ times the
+threshold takes $2.5$ per cent of effective labour at the baseline and $9.7$ per cent in Korea, against
+thresholds of $2.0$ and $7.7$ per cent. For the Benthamite criterion we follow \citet{adhami2024}, who calibrate the intercept of log flow
 utility to a value of a statistical life of \$7.4 million, which puts flow utility at $4.87$ in units
 where consumption is one. We set $\bar u$ so that the full 2023 utility index of our model plus
 $\bar u$, $\ln c+\alpha\ln b+\gamma\ln h+\Psi\ln Q+\bar u$, equals $4.87$, with 2023 consumption

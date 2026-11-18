@@ -890,7 +890,8 @@ rises with habitat at a little over half the rate of realised fertility; in the 
 ideals respond to the habitat in which respondents grew up rather than the one in which they live,
 although this runs through the family of origin; and in the main specification national and local
 habitat move ideals at similar rates (Section~\ref{sub:prefs}). Under the assumptions stated in Section~\ref{sub:prefs}, the point estimate attributes about
-54 per cent of the gradient to tastes and the remainder to costs of children. Fourth, at a given density and income, fertility is higher where the pollution load on the habitat is lower, although stated ideals show no detectable response to pollution and reverse causality from fertility
+54 per cent of the gradient to tastes and the remainder to costs of children; the share is robust to
+the top-code on fertility but closer to a third in low-fertility European samples. Fourth, at a given density and income, fertility is higher where the pollution load on the habitat is lower, although stated ideals show no detectable response to pollution and reverse causality from fertility
 to emissions cannot be excluded (Section~\ref{sub:pollution}). Section~\ref{sub:budget} summarises the
 budget-based tests, whose derivation and estimates are in Appendix~\ref{app:budget}, and
 Section~\ref{sub:caveats} states what remains unsettled.
@@ -928,7 +929,8 @@ inconsistencies in \texttt{X049}, and category boundaries differ in several coun
 natural coarsening is \texttt{X049a}, a five-category version available in waves 2--7, rather than
 \texttt{X050}, which is fielded only in waves 1 and 2 and cannot serve as a harmonised alternative.
 Third, \texttt{X011} is top-coded at five children, which affects $8.1$ per cent of respondents and
-compresses measured fertility in high-fertility cells.
+compresses measured fertility in high-fertility cells; Section~\ref{sub:prefs} shows that the
+taste-share estimate is robust to treating it as censoring.
 
 The WVS carries neither education expenditure nor hours worked, so it cannot support the tests of
 Appendix~\ref{sub:ltest}; what it can deliver is the gradient of Section~\ref{sub:gradient} and the
@@ -1194,15 +1196,33 @@ World Values Survey, less China 1995 and Pakistan 1997, which do not record reli
 Table~\ref{tab:prefs} reports the result. Ideal fertility rises with habitat at a little over half
 the rate of realised fertility: $\hat\varpi=0.54$, with an interval of $[0.43,\,0.68]$ that excludes
 both a pure cost account, $\varpi=0$, and a pure taste account, $\varpi=1$. The World Values Survey
-alone gives $0.59$ $[0.46,\,0.75]$ and the European sample alone $0.38$ $[0.18,\,0.75]$. The gap between ideal and realised fertility correspondingly widens with density. Both measures are
-top-coded at five, and censoring need not affect them equally: a respondent whose ideal is capped shows
-no ideal response even if realised fertility still rises. The estimate $\hat\varpi$ is therefore the
-ratio for the observed, top-coded outcomes; reading it as the structural taste share assumes that
-top-coding affects the two elasticities alike. An
+alone gives $0.59$ $[0.46,\,0.75]$ and the European sample alone $0.38$ $[0.18,\,0.75]$. The gap between ideal and realised fertility correspondingly widens with density. An
 obvious concern is that respondents who have completed their families report as ideal the number
 they have. The ideal-fertility gradient is, however, almost the same among respondents aged
 18--34, most of whom have not, as among those aged 45--70, which is not what ex-post
 rationalisation would produce.
+
+A second concern is the top-code. The World Values Survey records children ever had only up to
+``five or more'', and censoring need not affect the two measures equally: a respondent whose
+fertility is capped shows no response even if it still rises with habitat. In the pooled sample
+14 per cent of respondents sit at five or more children (16 per cent in the World Values Survey,
+8 per cent in the European file, and more than half in some high-fertility country--waves), against
+6 per cent at an ideal of five or more, so the cap compresses realised fertility more than the ideal
+and could bias $\hat\varpi$ upward. Treating the top category as right-censored instead of capping
+it leaves the estimate essentially unchanged: a censored Poisson model, which has the same
+conditional mean as the pseudo-likelihood estimator, gives $0.53$ $[0.40,\,0.65]$, and a Gaussian
+interval regression in levels gives $0.52$ $[0.41,\,0.65]$. Capping both measures at four gives
+$0.53$ and at three $0.45$; censoring at four or three gives $0.55$ and $0.60$.\footnote{These
+checks use the WVS Time Series v5.0, on which the baseline is $0.540$ $[0.413,\,0.693]$ with
+$N=40{,}334$; \texttt{replication/topcode.py} reports them in full.} The estimate is lower,
+however, in the 31 country--waves in which fewer than 5 per cent of respondents report five or more
+children: $0.34$ $[0.25,\,0.43]$ (Table~\ref{tab:prefs}). These are all European, most of them
+post-socialist surveys of the 1990s, with mean completed fertility of $1.9$ against $2.9$ in the rest
+of the sample. Since the censored models correct for the top-code without moving the estimate, the
+difference reflects who is in that subsample rather than the top-code itself, and it matches the
+European sample's $0.38$. The taste share is therefore an average: about one half across the pooled
+sample, and closer to one third in the low-fertility populations whose future the model is mostly
+about.
 
 Combined with the feedback strength $\hat S=0.209$ of \eqref{eq:S_estimate}, $\hat\varpi$ delivers
 the decomposition \eqref{eq:decomposition} directly. With $\mathcal{K}=1.57$ at the sample mean
@@ -1218,9 +1238,10 @@ method, treating the two estimates as independent. Since both draw on the World 
 bootstrap would be preferable; it is not straightforward here because $\hat S$ is estimated on cells
 and $\hat\varpi$ on individuals. The cost elasticity $\hat\chi_c$ collects every cost of children, time
 and goods alike, and corresponds to $\chi_\Phi$ in Corollary~\ref{cor:goods}. Under the interpretation
-of stated ideals as a taste measure, and assuming that top-coding affects both measures alike, the point
+of stated ideals as a taste measure, the point
 estimate attributes about 54 per cent of the observed
-gradient to tastes and the remainder to costs, and their combined strength lies far below the oscillation threshold of
+gradient to tastes and the remainder to costs (about a third to tastes in low-fertility European
+country--waves), and their combined strength lies far below the oscillation threshold of
 Proposition~\ref{prop:two_channels}. If stated ideals partly internalise the costs respondents
 expect to face, $\hat\varpi$ overstates the taste share and \eqref{eq:decomp_estimate} is an upper
 bound for $\xi$; if reported ideals are compressed towards a common norm, such as two children, it
@@ -1281,6 +1302,7 @@ Realised, ages 45--70, pooled             & $40{,}331$ & $0.0274$ $(0.0026)$ & \
 Ratio $\hat\varpi$, pooled                  &            & $0.539$ & $[0.428,\,0.678]$\\
 Ratio $\hat\varpi$, WVS only                & $29{,}715$ & $0.586$ & $[0.463,\,0.754]$\\
 Ratio $\hat\varpi$, EVS only                & $10{,}616$ & $0.377$ & $[0.181,\,0.751]$\\
+Ratio $\hat\varpi$, $<5\%$ at top code$^{a}$  & $14{,}360$ & $0.340$ & $[0.245,\,0.431]$\\
 Gap, ideal minus realised (WVS, children) & $29{,}715$ & $-0.0260$ $(0.0059)$ & \\
 Ideal, ages 18--34 (WVS)                  & $39{,}617$ & $0.0150$ $(0.0017)$ & \\
 Ideal, ages 35--44 (WVS)                  & $21{,}120$ & $0.0175$ $(0.0029)$ & \\
@@ -1309,7 +1331,10 @@ With local habitat, 61 countries          & $120{,}933$ & $0.0509$ $(0.0165)$ & 
 \begin{tablenotes}\footnotesize
 \item Poisson pseudo-maximum-likelihood elasticities, survey-weighted, with controls for age, age squared, sex,
 marital status and religious attendance. Panel~A: WVS waves 2--4 and EVS waves 1990 and 1999,
-country$\times$wave effects, both measures top-coded at five, bootstrap over country--waves. Panel~B: year effects and the controls of
+country$\times$wave effects, both measures top-coded at five, bootstrap over country--waves.
+$^{a}$~The 31 country--waves in which fewer than 5 per cent of respondents report five or more
+children, all European; estimated on the WVS Time Series v5.0, on which the pooled baseline is $0.540$
+$[0.413,\,0.693]$. Panel~B: year effects and the controls of
 Table~\ref{tab:gss}; habitat is minus the log of size of place (current) or of a representative
 population for the type of place at 16; movers left the city in which they lived at 16; the
 ideal-fertility rows use respondents with siblings and parents' education recorded, so that both rows
@@ -1329,7 +1354,8 @@ similar rates. None of these is
 decisive on its own, and each rests on an interpretation: of stated ideals as preferences, of
 childhood habitat as distinct from family background, of between-country variation as more than
 regional culture. But a pure cost account has to explain all three away, and, under the assumptions stated in Section~\ref{sub:prefs}, the decomposition in
-\eqref{eq:decomp_estimate} attributes about 54 per cent of the habitat gradient to tastes.
+\eqref{eq:decomp_estimate} attributes about 54 per cent of the habitat gradient to tastes on
+average, and about a third in the low-fertility country--waves of Europe.
 
 %% -------------------------------------------------------------
 \subsection{Crowding and pollution}
@@ -1469,8 +1495,9 @@ reasons. And the national-habitat evidence comes from differences between countr
 continent effects and hold within Europe but cannot exclude every national difference correlated
 with density. The test that would settle the question within the model, based
 on expenditure shares, depends on a preference specification the data reject. We therefore regard
-the taste channel as supported, with a point estimate of its share of about one half, conditional on reading stated ideals as tastes and
-on top-coding affecting ideal and realised fertility alike, but not as established beyond the
+the taste channel as supported, with a point estimate of its share of about one half on average and about a third in low-fertility
+European samples, conditional on reading stated ideals as tastes (the estimate survives treating the
+top-code on fertility as censoring), but not as established beyond the
 reach of a cost account that is willing to explain each of these patterns separately.
 
 Fourth, the evidence is cross-sectional, while the model describes an aggregate time path. Over time

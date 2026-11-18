@@ -44,13 +44,14 @@ Habitat, Fertility and Long-run Growth}%\thanks{The author thanks the Monash Mac
 \begin{abstract}
 \noindent
 \citet{jones22} shows that a shrinking population can stall idea-based growth; \citet{STRULIK2024104943}
-shows that growth can continue when ideas are produced by human capital. Both study the consequences of
-a declining population; neither asks what could stop the decline. We let the taste for children and the time needed to raise them depend
+shows that growth can continue when ideas are produced by human capital. In Jones's analysis only a
+planner's timely fertility policy stops the decline; neither paper identifies a force within the economy
+that brings fertility back to replacement. We let the taste for children and the time needed to raise them depend
 on habitat per capita, which falls through crowding and through pollution, and let clean knowledge,
 produced by publicly financed research, lower the pressure that output places on the habitat.
-Replacement fertility is then a unique and locally stable outcome, and a stationary population with
-positive growth is an equilibrium if and only if clean research exceeds a threshold that we derive in
-closed form. When clean innovation rises with the number of people, fertility and clean technology
+Replacement fertility is then a unique and locally stable outcome. A stationary population with
+positive growth is a locally stable equilibrium when clean research exceeds a threshold that we derive
+in closed form, and no stationary population exists when clean research falls short of it. When clean innovation rises with the number of people, fertility and clean technology
 interact: the economies with the lowest fertility settle at the smallest populations and need the most
 clean research, and below the threshold population decline slows clean innovation, so that the economy
 falls into an environmental Empty Planet. Remediation of environmental quality raises the stationary population but substitutes only weakly
@@ -59,7 +60,7 @@ surveys and a panel of 161 countries, and stated ideals rise with habitat at abo
 realised fertility. Calibrated to these estimates, and over a range of scale effects informed by
 cross-country evidence, the model implies that for a stationary equilibrium Korea needs between 1.1 and
 5.4 times the clean effort that produces its current measured clean progress and Japan between 1.1 and
-2.5, China and Italy fall short only at the upper end of the range, and the other five economies we
+2.6, China and Italy fall short only at the upper end of the range, and the other five economies we
 consider clear the threshold throughout. If clean knowledge is instead semi-endogenous, no research share
 secures a stationary population at standard returns to research.
 \end{abstract}
@@ -89,7 +90,8 @@ albeit at a rate that slows over time''. The fertility threshold in Strulik's Pr
 replacement whenever $(1+\sigma)\theta>1$, where $\sigma$ is the elasticity of output with respect to
 ideas and $\theta$ the elasticity of human capital with respect to education spending, so his result
 applies equally to a stationary population. What
-both leave open is why fertility should settle at replacement rather than below it. Strulik himself
+both leave open is a force within the economy that brings fertility back to replacement: in
+\citet{jones22} only a planner's fertility policy does so. Strulik himself
 acknowledges that ``it can be argued that steady negative population growth is also unsustainable'', and
 reads his results as a guide to the next few centuries rather than to the steady state.
 
@@ -102,8 +104,9 @@ capita and, with it, fertility, so that replacement becomes a unique and locally
 than a knife-edge. But output keeps growing, and the habitat shrinks unless the pressure that each unit
 of output places on it falls fast enough. We make that rate endogenous. Clean knowledge, produced by
 publicly financed research, lowers pressure per unit of output, and, when clean progress is proportional
-to research effort, a stationary population with positive long-run growth is an equilibrium if and only if
-the share of effort devoted to clean research exceeds a threshold that we derive in closed form.
+to research effort, a stationary population with positive long-run growth is a locally stable
+equilibrium when the share of effort devoted to clean research exceeds a threshold that we derive in
+closed form, and no stationary population exists when the share falls short of it.
 
 The threshold links demography and technology whenever clean innovation rises with the number of people
 engaged in it, as in scale-effect models of innovation. A low-fertility economy needs a large gain in
@@ -163,9 +166,9 @@ predicts, not causal effects (Section~\ref{sec:empirics}).
 \item \emph{Quantitative implications.} Calibrated to these estimates, and with clean progress read from
 each country's observed decline in emission intensity, the model implies that for a stationary
 equilibrium Korea needs between 1.1 and 5.4 times the clean effort that produces its current measured
-clean progress and Japan between 1.1 and 2.5, over a sensitivity range for the scale effect,
+clean progress and Japan between 1.1 and 2.6, over a sensitivity range for the scale effect,
 $0\le\nu\le0.5$, that is informed by cross-country evidence. China and Italy clear the threshold
-without a scale effect and fall short at the upper end of the range, by factors of 1.8 and 1.4, while
+without a scale effect and fall short at the upper end of the range, by factors of 1.9 and 1.5, while
 Germany, the United States, France, Sweden and the United Kingdom clear it throughout. Starting from
 today's conditions, transitions add up to a tenth to these requirements. Population stabilises only
 after large declines, and the lower the fertility, the larger the decline: at the within-country
@@ -352,7 +355,7 @@ quality of a habitat under no pressure. The government taxes labour income at th
 spends the revenue $\tau_r w_tH_t$ on remediation, which restores quality at given pressure, and with the
 revenue $Rw_tH_t$ it hires the share $R$ of effective labour at the market wage for clean research. The
 clean-research share therefore equals its tax rate, and both instruments are financed in the same way.
-From here on we hold the clean-research share constant, $R_t=R$.
+From here on we hold the clean-research share constant, $R_t=R$, and require $\tau_r+R<1$.
 
 \subsection{Households}
 Adults value consumption $c_t$, the number of their children $b_t$ and the human capital of their
@@ -363,7 +366,8 @@ u_t=\log c_t+\alpha(\epsilon_t)\log b_t+\gamma\log h_{t+1},\qquad b_t\equiv2n_t,
 \end{align}
 Children are counted per couple, $b_t$, while the population law \eqref{eq:Llaw_hab} uses $n_t$. Since
 $\log b_t=\log2+\log n_t$, the factor two leaves every choice unchanged; it matters only for welfare.
-Raising a child takes $\phi(\epsilon_t)$ units of adult time; parents also spend $s_t$ units of time and
+Costs are per adult: since $n_t$ is half a couple's number of children, $\phi n_t$, $s_tn_t$ and $q_tn_t$
+are each adult's share of the couple's costs. Raising a child takes $\phi(\epsilon_t)$ units of adult time; parents also spend $s_t$ units of time and
 $q_t$ units of goods per child on education, and human capital is produced as
 \begin{align}
 h_{t+1}=\nu_h\,q_t^{\theta}s_t^{\eta},\qquad \nu_h>0,\ 0<\theta<1,\ 0<\eta<1 .
@@ -502,7 +506,7 @@ Suppose $\alpha(\epsilon)-[\Gamma+\phi(\epsilon)]/[1-\phi(\epsilon)]$ changes si
 \item[(i)] the stationary habitat per capita $\epsilon^\ast$ exists and is unique;
 \item[(ii)] the strength of the demographic feedback at $\epsilon^\ast$ is
 $S\equiv\epsilon^\ast n'(\epsilon^\ast)=\mathcal{K}(\alpha^\ast)\xi+\chi$, with $\alpha^\ast=\alpha(\epsilon^\ast)$;
-\item[(iii)] $\epsilon^\ast$ is locally stable if and only if $0<S<2$; convergence is monotone for
+\item[(iii)] $\epsilon^\ast$ is locally stable if $0<S<2$ and unstable if $S<0$ or $S>2$; convergence is monotone for
 $0<S<1$ and takes the form of damped oscillations in fertility and population for $1<S<2$.
 \end{enumerate}
 \end{proposition}
@@ -574,7 +578,7 @@ L^\ast(\tau_r)\equiv\frac{\bar E\,Q_\infty(\tau_r)}{\epsilon^\ast}.
 \begin{proposition}[Endogenous decoupling and the stationary population]
 \label{prop:threshold}
 \label{prop:decoupling}
-Let $(1+\sigma)\theta>1$, let $\epsilon^\ast$ satisfy $0<S<2$, and let $R\in(0,1)$ and $\tau_r$ be constant.
+Let $(1+\sigma)\theta>1$, let $\epsilon^\ast$ satisfy $0<S<2$, and let $R>0$ and $\tau_r\ge0$ be constant, with $\tau_r+R<1$.
 \begin{enumerate}
 \item[(i)] If $\delta_BR\,L^\ast(\tau_r)^{\nu}>g_B^\ast$, the stationary population $L^\ast(\tau_r)$, with
 income per capita growing at the saturated rate \eqref{eq:limits_saturated}, is a locally stable limit:
@@ -652,7 +656,9 @@ follow by differentiation, and (c) from Propositions~\ref{prop:tax} and~\ref{pro
 taxes enter \eqref{eq:h_tax_dyn} only through the constant factor $(1-\tau)^{\theta}$.
 \end{proof}
 
-The threshold $R^\ast$ is a condition for the stationary equilibrium to exist and attract nearby paths.
+The threshold $R^\ast$ is a bound: a share above it makes the stationary equilibrium exist and attract
+nearby paths, and a share below it rules out a stationary population. Proposition~\ref{prop:threshold}
+does not cover the boundary case $R=R^\ast$, which we leave aside.
 By Proposition~\ref{prop:threshold}(iii), an economy that starts far from $L^\ast$ can need more clean
 research to get there; Section~\ref{sub:illustration} measures the difference. Three features of the corollary deserve emphasis. First, because clean knowledge is assumed to earn
 no private return, the market supplies no clean research, so a stationary population is a policy outcome. Second, without a scale effect, remediation and clean
@@ -751,25 +757,38 @@ a condition on technology.
 
 \begin{proposition}[Semi-endogenous clean knowledge]
 \label{prop:semiendog}
-Let $k_c\equiv\lambda_c/\beta_c$. A stationary population with growing output exists if and only if
-$k_c\theta\ge1$, whatever the research share. If $k_c\theta<1$, population declines at
+Let $\beta_c,\lambda_c>0$, $R>0$ and $k_c\equiv\lambda_c/\beta_c$. A stationary population with growing
+output exists if and only if $k_c\theta\ge1$, whatever the research share. If $k_c\theta<1$ and
+$1+\mu(1-k_c)>0$, then along a saturated balanced path population declines at
 \[
-\ln\tilde n=-\frac{\mu\,\zeta^\ast\ln(1+\bar g_A)\,(1-k_c\theta)}{1+\mu(1-k_c)} .
+\ln\tilde n=-\frac{\mu\,\zeta^\ast\ln(1+\bar g_A)\,(1-k_c\theta)}{1+\mu(1-k_c)} ,
 \]
+provided that $\tilde n(1+\bar g_A)^{\sigma\theta/(1-\theta)}>1$, so that clean knowledge grows, and that
+$\tilde n$ exceeds the saturation bound of Proposition~\ref{prop:threshold}.
 \end{proposition}
 
 \begin{proof}
 Along a balanced path with constant $R$, $1+g_B=[\tilde n(1+g_h)]^{k_c}$ and, at the saturated limit,
 $1+g_h=(1+\bar g_A)^{\sigma\theta/(1-\theta)}$. Pressure stays bounded at $\tilde n=1$ if and only if
 $k_c\sigma\theta/(1-\theta)\ge\zeta^\ast$, that is $k_c\theta\ge1$. Otherwise, setting
-$[(1+\bar g_A)^{\zeta^\ast}\tilde n/(1+g_B)]^{-\mu}=\tilde n$ and solving gives the rate.
+$[(1+\bar g_A)^{\zeta^\ast}\tilde n/(1+g_B)]^{-\mu}=\tilde n$ and solving gives the rate, which is negative
+when the denominator is positive. The accumulation law makes $B_t$ non-decreasing, so the balanced path
+requires $1+g_B>1$; and the saturated limit requires $\tilde n$ above the bound of
+Proposition~\ref{prop:threshold}.
 \end{proof}
 
-% TODO: state the values of lambda and beta and cite their source for k_c=0.375.
-Under this law no permanent policy moves the threshold, since $R$ changes only the level of clean
-knowledge, and with the returns used for general ideas, $k_c=\lambda/\beta=0.375$, the condition
-$k_c\ge1/\theta=1.20$ fails. Decline is also faster than if clean progress did not depend on the size of
-the research workforce, for which the denominator would be $1+\mu$. Whether a stationary population is a policy outcome thus
+Under this law a permanent change in the research share $R$ changes the level of clean knowledge,
+not the technological condition $k_c\theta\ge1$. For an illustrative benchmark, we set
+$\lambda_c=\lambda=0.75$ and $\beta_c=\beta=2$, following the general-ideas calibration of
+\citet[Table~2, p.~3510]{jones22}, also used by \citet[Section~2.4]{STRULIK2024104943}.
+Here $\lambda$ is the input elasticity of idea production and $1-\beta$ is its elasticity with
+respect to the existing stock of ideas. Thus $k_c=\lambda_c/\beta_c=0.375$, below the required
+$1/\theta\simeq1.205$. Applying these values to clean knowledge is a maintained benchmark,
+not an estimate of the clean-innovation elasticities. Decline is also faster than if clean progress did not depend on the size of
+the research workforce, for which the denominator would be $1+\mu$. At these returns the conditions of
+the proposition hold for $\mu$ between the calibrated $0.29$ and the illustrative $1$: population
+declines by between 9 and 21 per cent a generation, clean knowledge still grows, and $\tilde n$ stays
+above the saturation bound of $0.70$. Whether a stationary population is a policy outcome thus
 depends on whether clean innovation is fully or semi-endogenous, a question on which the evidence on
 green innovation, rather than on fertility, will have to decide.
 
@@ -799,15 +818,15 @@ $\alpha\big(Q_\infty^{\iota}\bar E/L^\ast\big)=\big[\Gamma+\Phi(Q_\infty\bar E/L
 \big[1-\Phi(Q_\infty\bar E/L^\ast)\big]$; it exists if the difference of the two sides changes sign, and it
 is then unique;
 \item[(ii)] the feedback strength is $S^\ast\equiv-\mathrm{d}\ln n/\mathrm{d}\ln L$ at $L^\ast$,
-$S^\ast=\mathcal{K}(\alpha^\ast)\xi+\chi$, and $L^\ast$ is locally stable if and only if $0<S^\ast<2$;
+$S^\ast=\mathcal{K}(\alpha^\ast)\xi+\chi$, and $L^\ast$ is locally stable if $0<S^\ast<2$ and unstable if $S^\ast<0$ or $S^\ast>2$;
 \item[(iii)] a cleaner habitat raises the stationary population with elasticity
 \begin{align}
 \frac{\mathrm{d}\ln L^\ast}{\mathrm{d}\ln Q_\infty}=\frac{\iota\,\mathcal{K}(\alpha^\ast)\xi+\chi}{S^\ast},
 \label{eq:dLdQ}
 \end{align}
 which is one with the common index and $\chi/S^\ast$ when quality acts on costs only;
-\item[(iv)] Proposition~\ref{prop:threshold}(i) and~(iii) and Corollary~\ref{cor:threshold}(c) hold with this
-$L^\ast(\tau_r)$; the threshold is $R^\ast(\tau_r)=(g_B^\ast/\delta_B)L^\ast(\tau_r)^{-\nu}$, rising as
+\item[(iv)] Proposition~\ref{prop:threshold}(i) and~(iii) hold with this $L^\ast(\tau_r)$, and neither
+instrument changes the saturated growth rate; the threshold is $R^\ast(\tau_r)=(g_B^\ast/\delta_B)L^\ast(\tau_r)^{-\nu}$, rising as
 $L^\ast$ falls, and part (a) of the corollary becomes
 \begin{align*}
 \frac{\partial\ln R^\ast}{\partial\tau_r}=-\nu\,\frac{\iota\,\mathcal{K}(\alpha^\ast)\xi+\chi}{S^\ast}\,
@@ -823,7 +842,8 @@ Fertility therefore falls in $L$ at given quality, which gives (i), and the popu
 $L_{t+1}=L_tn(L_t)$ has slope $1-S^\ast$ at $L^\ast$, which gives (ii). Setting $\mathrm{d}\ln n=0$ gives (iii).
 The proofs of Proposition~\ref{prop:threshold}(i) and~(iii) use only that population converges to a
 stationary $L^\ast$ once pressure vanishes, and that of Corollary~\ref{cor:threshold} only that
-$\delta_BR(L^\ast)^{\nu}=g_B^\ast$; (iv) follows with (iii).
+$\delta_BR(L^\ast)^{\nu}=g_B^\ast$; (iv) follows with (iii), and the growth rate is unchanged because the
+taxes enter \eqref{eq:h_tax_dyn} only through a constant factor.
 \end{proof}
 
 The split changes one thing that matters. With the common index, a cleaner environment is converted
@@ -837,7 +857,11 @@ $e_Q(\iota\mathcal{K}\xi+\chi)/S$ rather than $e_Q$ alone. Calibrated to that re
 $\iota$ implies a larger $e_Q$, and the effect of ending pollution on the stationary population is
 nearly unchanged. Section~\ref{sec:quant} reports both cases. The asymptotic rate of decline in
 Proposition~\ref{prop:threshold}(ii) depends on the functional forms when $\iota<1$, and we do not
-characterise it.
+characterise it. Nor does the result of Corollary~\ref{cor:threshold}(c) on the level of income carry
+over. When $\iota<1$, remediation changes the stationary taste for children. With time costs alone, for
+example, income per capita on the stationary path is proportional to
+$(1-R)(1-\tau_r-R)^{\theta/(1-\theta)}(1+\alpha^\ast)^{-(1+\eta)/(1-\theta)}$, and a remediation tax that
+lowers $\alpha^\ast$ raises the last factor, so its effect on the level of income has no definite sign.
 
 \section{Empirical evidence on the habitat--fertility link}
 \label{sec:empirics}
@@ -865,7 +889,7 @@ sign only. Evidence outside the budget constraint is more informative: stated id
 rises with habitat at a little over half the rate of realised fertility; in the United States,
 ideals respond to the habitat in which respondents grew up rather than the one in which they live,
 although this runs through the family of origin; and in the main specification national and local
-habitat move ideals at similar rates (Section~\ref{sub:prefs}). Under the interpretation of stated ideals as a taste measure, the point estimate attributes about
+habitat move ideals at similar rates (Section~\ref{sub:prefs}). Under the assumptions stated in Section~\ref{sub:prefs}, the point estimate attributes about
 54 per cent of the gradient to tastes and the remainder to costs of children. Fourth, at a given density and income, fertility is higher where the pollution load on the habitat is lower, although stated ideals show no detectable response to pollution and reverse causality from fertility
 to emissions cannot be excluded (Section~\ref{sub:pollution}). Section~\ref{sub:budget} summarises the
 budget-based tests, whose derivation and estimates are in Appendix~\ref{app:budget}, and
@@ -876,23 +900,26 @@ Section~\ref{sub:caveats} states what remains unsettled.
 \label{sub:data}
 %% -------------------------------------------------------------
 
-Our source is the World Values Survey trend file 1981--2022, which pools seven waves and
-$442{,}473$ respondents.\footnote{See \url{https://www.worldvaluessurvey.org/WVSEVStrend.jsp}.
+Our source is the World Values Survey trend file 1981--2022, version 5.0, which pools seven waves and
+$443{,}488$ respondents.\footnote{See \url{https://www.worldvaluessurvey.org/WVSEVStrend.jsp}.
 Wave coverage is documented in the Common EVS/WVS Dictionary, which we use below; several items
 are not fielded in every wave.} Habitat is proxied by \texttt{X049}, an eight-category measure of
 the size of the respondent's town with thresholds at 2{,}000, 5{,}000, 10{,}000, 20{,}000,
 50{,}000, 100{,}000 and 500{,}000 inhabitants. Desired fertility is \texttt{D017}, the ideal number
 of children; realised fertility is \texttt{X011}, children ever had, top-coded at five. Controls
-are age, sex, marital status, religious attendance and, with the reservation noted below, education
+are age, age squared, sex, marital status, religious attendance and, with the reservation noted below, education
 and income.
 
 Wave coverage is the binding constraint, and it differs sharply between the two fertility measures.
 \texttt{D017} is fielded in WVS waves 1--4 only, and \texttt{X049} in waves 2--7, so the two
-overlap in waves 2, 3 and 4: $98{,}512$ respondents in 51 countries and 77 country--waves, spanning
-1989--2004. \texttt{X011}, by contrast, appears in all seven waves, giving $316{,}751$ respondents
-in 100 countries and 231 country--waves once \texttt{X049} is also required. The ideal-fertility
+overlap in waves 2, 3 and 4: $99{,}126$ respondents in 52 countries and 78 country--waves, spanning
+1989--2004. \texttt{X011}, by contrast, appears in all seven waves, giving $317{,}428$ respondents
+in 100 countries and 232 country--waves once \texttt{X049} is also required. The ideal-fertility
 measure is therefore confined to a historical window while realised fertility is not, which is one
-reason we build the structural estimate of Section~\ref{sub:xi} on \texttt{X011}.
+reason we build the structural estimate of Section~\ref{sub:xi} on \texttt{X011}. The exercises that
+pool the World Values Survey with the European Values Study and with national data, in
+Sections~\ref{sub:prefs} and~\ref{sub:pollution}, use the earlier version 4.0 of the trend file and
+version 3.0 of the European Values Study.
 
 Three further features constrain the design. First, \texttt{X049} is suppressed for data protection
 in EVS 2008 and EVS 2017, so those waves cannot contribute if the European file is appended; they
@@ -937,22 +964,22 @@ $\{\hat b_k\}$ against bin.
 \includegraphics[width=\textwidth]{fig_gradient.pdf}
 \caption{Fertility by settlement size. Coefficients $\hat b_k$ from \eqref{eq:gradient_spec}
 with the smallest settlement ($<2{,}000$) as the omitted category and 95\% confidence intervals,
-country$\times$wave fixed effects, controlling for age, sex, marital status and religious attendance.
-Panel (a) is the ideal number of children (\texttt{D017}, WVS waves 2--4); panel (b) is children
-ever had (\texttt{X011}) for respondents aged 45--70. Survey-weighted; standard errors clustered
+country$\times$wave fixed effects, controlling for age, age squared, sex, marital status and religious attendance.
+Panel (a) is the ideal number of children (\texttt{D017}); panel (b) is children ever had
+(\texttt{X011}) for respondents aged 45--70. Both panels use WVS waves 2--4. Survey-weighted; standard errors clustered
 at the country--wave level.}
 \label{fig:gradient}
 \end{figure}
 
 The gradient is monotone across all eight bins and in both measures. Relative to settlements under
 2{,}000 inhabitants, the ideal number of children falls by $0.053$ in towns of 2{,}000--5{,}000 and by
-$0.330$ (s.e.\ $0.050$) in cities above half a million; completed fertility falls by $0.504$
+$0.330$ (s.e.\ $0.050$) in cities above half a million; completed fertility falls by $0.499$
 (s.e.\ $0.051$) over the same range. This is the micro analogue of the comparative static
 $\partial n/\partial \epsilon>0$ of Section~\ref{sec:model}.
 
 The bad-control prediction of Appendix~\ref{sub:ltest} is visible in the same estimates. Adding
 education and income, both chosen jointly with fertility given $\alpha$, attenuates the
-largest coefficient from $-0.330$ to $-0.275$ for ideal fertility and from $-0.504$ to $-0.393$ for
+largest coefficient from $-0.330$ to $-0.275$ for ideal fertility and from $-0.499$ to $-0.390$ for
 realised fertility, a compression of roughly a fifth in each case. We therefore report the
 specification without them as the headline and the attenuation alongside it rather than in its
 place.
@@ -1002,8 +1029,8 @@ count) yields $\hat\alpha_{j}$ for each cell $j$. The elasticity is then the slo
 We implement \eqref{eq:xi_spec} on country$\times$wave$\times$bin cells built from \texttt{X011}
 for respondents aged 45--70, taking $n$ as the cell's weighted mean number of children divided by two\footnote{Dividing by
 $2.1$ instead, as with the UN data below, gives a composite of $0.0178$ rather than $0.0185$.} so that
-$n=1$ is replacement, and keeping cells with at least thirty respondents. This yields $1{,}031$
-cells across $225$ country--waves. The mean implied taste, weighting cells by size, is $\hat\alpha=0.493$, above both
+$n=1$ is replacement, and keeping cells with at least thirty respondents. This yields $1{,}034$
+cells across $226$ country--waves. The mean implied taste, weighting cells by size, is $\hat\alpha=0.493$, above both
 $\alpha_0$ and $\alpha^{\ast}$, as one expects in a global sample whose older cohorts completed
 their fertility above replacement.
 
@@ -1151,8 +1178,8 @@ elasticities is then the taste share of the fertility gradient,
 \label{eq:tau}
 \end{align}
 the same object that $\Lambda'$ was designed to recover in \eqref{eq:Lambda_share}, now measured
-without any assumption on the form of preferences over consumption but conditional on the
-interpretation of stated ideals.
+without the expenditure-share regressions, but conditional on the fertility mapping of
+Section~\ref{sec:model} and on the interpretation of stated ideals.
 
 We estimate both elasticities on respondents aged 45--70, for whom fertility is complete, applying
 the same top-code of five to both measures. To the World Values Survey (waves 2--4) we add the
@@ -1162,12 +1189,16 @@ Of these, 23 enter the sample: we drop two surveys that the World Values Survey 
 that lacks religious attendance (Estonia). Sweden's 1999 survey, the only later one that asks about ideal
 fertility, adds a twenty-fourth; its interviews enter through the European file only, since the World
 Values Survey file contributes none of them. The pooled sample covers 99 country--waves, 75 from the World Values
-Survey and 24 from the European survey; the 75 are the 77 of Section~\ref{sub:data} less China 1995 and
-Pakistan 1997, which do not record religious attendance. Panel~A of
+Survey and 24 from the European survey; the 75 are the 77 country--waves with ideal fertility and settlement size in version 4.0 of the
+World Values Survey, less China 1995 and Pakistan 1997, which do not record religious attendance. Panel~A of
 Table~\ref{tab:prefs} reports the result. Ideal fertility rises with habitat at a little over half
 the rate of realised fertility: $\hat\varpi=0.54$, with an interval of $[0.43,\,0.68]$ that excludes
 both a pure cost account, $\varpi=0$, and a pure taste account, $\varpi=1$. The World Values Survey
-alone gives $0.59$ $[0.46,\,0.75]$ and the European sample alone $0.38$ $[0.18,\,0.75]$. The gap between ideal and realised fertility correspondingly widens with density. An
+alone gives $0.59$ $[0.46,\,0.75]$ and the European sample alone $0.38$ $[0.18,\,0.75]$. The gap between ideal and realised fertility correspondingly widens with density. Both measures are
+top-coded at five, and censoring need not affect them equally: a respondent whose ideal is capped shows
+no ideal response even if realised fertility still rises. The estimate $\hat\varpi$ is therefore the
+ratio for the observed, top-coded outcomes; reading it as the structural taste share assumes that
+top-coding affects the two elasticities alike. An
 obvious concern is that respondents who have completed their families report as ideal the number
 they have. The ideal-fertility gradient is, however, almost the same among respondents aged
 18--34, most of whom have not, as among those aged 45--70, which is not what ex-post
@@ -1187,7 +1218,8 @@ method, treating the two estimates as independent. Since both draw on the World 
 bootstrap would be preferable; it is not straightforward here because $\hat S$ is estimated on cells
 and $\hat\varpi$ on individuals. The cost elasticity $\hat\chi_c$ collects every cost of children, time
 and goods alike, and corresponds to $\chi_\Phi$ in Corollary~\ref{cor:goods}. Under the interpretation
-of stated ideals as a taste measure, the point estimate attributes about 54 per cent of the observed
+of stated ideals as a taste measure, and assuming that top-coding affects both measures alike, the point
+estimate attributes about 54 per cent of the observed
 gradient to tastes and the remainder to costs, and their combined strength lies far below the oscillation threshold of
 Proposition~\ref{prop:two_channels}. If stated ideals partly internalise the costs respondents
 expect to face, $\hat\varpi$ overstates the taste share and \eqref{eq:decomp_estimate} is an upper
@@ -1275,7 +1307,7 @@ With local habitat, 61 countries          & $120{,}933$ & $0.0509$ $(0.0165)$ & 
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
-\item Poisson pseudo-maximum-likelihood elasticities, survey-weighted, with controls for age, sex,
+\item Poisson pseudo-maximum-likelihood elasticities, survey-weighted, with controls for age, age squared, sex,
 marital status and religious attendance. Panel~A: WVS waves 2--4 and EVS waves 1990 and 1999,
 country$\times$wave effects, both measures top-coded at five, bootstrap over country--waves. Panel~B: year effects and the controls of
 Table~\ref{tab:gss}; habitat is minus the log of size of place (current) or of a representative
@@ -1283,7 +1315,8 @@ population for the type of place at 16; movers left the city in which they lived
 ideal-fertility rows use respondents with siblings and parents' education recorded, so that both rows
 share one sample; bootstrap over sampling clusters. Panel~C: national habitat is minus the log of population density in the
 survey year (UN WPP 2024); local habitat is minus the log of settlement population; both
-regressions control for log GDP per capita (World Bank) and include study$\times$wave effects;
+regressions control for log GDP per capita (World Bank GDP in current US dollars divided by UN WPP
+population) and include study$\times$wave effects;
 bootstrap over countries.
 \end{tablenotes}
 \end{threeparttable}
@@ -1295,7 +1328,7 @@ up in; and, in the main specification, stated ideals respond to national and loc
 similar rates. None of these is
 decisive on its own, and each rests on an interpretation: of stated ideals as preferences, of
 childhood habitat as distinct from family background, of between-country variation as more than
-regional culture. But a pure cost account has to explain all three away, and, under the interpretation of stated ideals as a taste measure, the decomposition in
+regional culture. But a pure cost account has to explain all three away, and, under the assumptions stated in Section~\ref{sub:prefs}, the decomposition in
 \eqref{eq:decomp_estimate} attributes about 54 per cent of the habitat gradient to tastes.
 
 %% -------------------------------------------------------------
@@ -1348,9 +1381,13 @@ Ideal number of children                   & $\phantom{-}0.021$ $(0.041)$ & $0.0
 \end{tabular}
 \begin{tablenotes}\footnotesize
 \item All specifications control for log GDP per capita. Panel A: OLS of $\ln\mathcal{A}(\text{TFR}/2.1)$,
-countries with at least one million inhabitants, standard errors clustered by country. Panel B: Poisson
+country--years in which population exceeds one million and emissions are positive, standard errors
+clustered by country. GDP per capita is from the Maddison Project Database and emissions from the
+Global Carbon Budget, both via Our World in Data; the panel is unbalanced, with 103 countries in 1950,
+144 in 1990 and 153 by 2022. Panel B: Poisson
 pseudo-maximum likelihood with wave effects and the controls of Table~\ref{tab:prefs}, completed
-fertility in waves 1--7 and ideal fertility in waves 1--4, bootstrap over countries. Because
+fertility in waves 1--7 and ideal fertility in waves 1--4, GDP per capita as in Table~\ref{tab:prefs}
+(World Bank GDP in current US dollars divided by UN WPP population), bootstrap over countries. Because
 $-\ln(\text{CO}_2/\text{km}^2)=-\ln(\text{CO}_2/L)-\ln D$, the crowding coefficient measures the effect of
 density over and above its contribution to the pollution load. Emissions: Global Carbon Budget via
 Our World in Data.
@@ -1432,7 +1469,8 @@ reasons. And the national-habitat evidence comes from differences between countr
 continent effects and hold within Europe but cannot exclude every national difference correlated
 with density. The test that would settle the question within the model, based
 on expenditure shares, depends on a preference specification the data reject. We therefore regard
-the taste channel as supported, with a point estimate of its share of about one half, but not as established beyond the
+the taste channel as supported, with a point estimate of its share of about one half, conditional on reading stated ideals as tastes and
+on top-coding affecting ideal and realised fertility alike, but not as established beyond the
 reach of a cost account that is willing to explain each of these patterns separately.
 
 Fourth, the evidence is cross-sectional, while the model describes an aggregate time path. Over time
@@ -1490,9 +1528,11 @@ common index, $\iota=1$. If quality acts on costs only, $\iota=0$, the same coef
 $e_Q\chi/S$ (Proposition~\ref{prop:split}), so that $e_Q=0.235\times0.209/0.096=0.51$; we report that case
 alongside the baseline.
 
-\emph{Clean research.} Each country's current clean progress is read from its 2005--2022 trend in
-carbon-dioxide emissions per unit of GDP, $g_{\text{int},i}$, which is negative in every country we
-consider: per generation, $g_{B,i}=(1+g_{\text{int},i})^{-30}-1$. With population normalised to one in
+\emph{Clean research.} Each country's current clean progress is read from the average annual rate of change in its
+carbon-dioxide emissions per unit of GDP between 2005 and 2022,
+$g_{\text{int},i}=(I_{i,2022}/I_{i,2005})^{1/17}-1$, where $I$ is emission intensity, measured with the
+Global Carbon Budget emissions and the Maddison Project GDP series compiled by Our World in Data. The
+rate is negative in every country we consider: per generation, $g_{B,i}=(1+g_{\text{int},i})^{-30}-1$. With population normalised to one in
 2023, current clean progress is $\delta_BR_i=g_{B,i}$, so clean effort can be measured relative to the
 effort that would produce the current measured progress, $m\equiv R/R_i$, without data on research
 spending. Because the decline in emission intensity also reflects regulation, energy prices, structural
@@ -1575,24 +1615,25 @@ transitional slowdown of Remark~\ref{rem:transition}.
 \cmidrule(lr){6-9}
  & 2023 & \% a year & & 2023 $=1$ & $\nu=0$ & $\nu=0.5$ & $\nu=1$\tnote{a} & $\nu=0.5$, $\tau_r=0.1$\\
 \midrule
-Korea          & 0.72 & $-1.67$ & 37.8 & 0.04 & 1.11 & 5.38 & 26.08 & 4.91\\
-China          & 1.00 & $-2.71$ & 16.5 & 0.10 & 0.57 & 1.82 & 5.84 & 1.66\\
-Japan          & 1.21 & $-1.73$ & 9.2 & 0.18 & 1.06 & 2.53 & 6.04 & 2.31\\
-Italy          & 1.20 & $-2.64$ & 9.4 & 0.17 & 0.59 & 1.43 & 3.47 & 1.31\\
-Germany        & 1.44 & $-3.18$ & 5.0 & 0.32 & 0.45 & 0.78 & 1.38 & 0.71\\
-Sweden         & 1.43 & $-4.09$ & 5.1 & 0.32 & 0.29 & 0.52 & 0.93 & 0.47\\
-United Kingdom & 1.56 & $-4.70$ & 3.7 & 0.44 & 0.22 & 0.34 & 0.51 & 0.31\\
-United States  & 1.62 & $-2.79$ & 3.1 & 0.51 & 0.54 & 0.76 & 1.07 & 0.70\\
-France         & 1.64 & $-3.08$ & 3.0 & 0.54 & 0.47 & 0.64 & 0.87 & 0.58\\
+Korea          & 0.72 & $-1.66$ & 37.8 & 0.04 & 1.12 & 5.44 & 26.37 & 4.96\\
+China          & 1.00 & $-2.67$ & 16.5 & 0.10 & 0.58 & 1.86 & 5.96 & 1.70\\
+Japan          & 1.21 & $-1.71$ & 9.2 & 0.18 & 1.07 & 2.56 & 6.12 & 2.34\\
+Italy          & 1.20 & $-2.61$ & 9.4 & 0.17 & 0.60 & 1.46 & 3.53 & 1.33\\
+Germany        & 1.44 & $-3.13$ & 5.0 & 0.32 & 0.46 & 0.80 & 1.41 & 0.73\\
+Sweden         & 1.43 & $-4.01$ & 5.1 & 0.32 & 0.30 & 0.54 & 0.96 & 0.49\\
+United Kingdom & 1.56 & $-4.59$ & 3.7 & 0.44 & 0.24 & 0.36 & 0.54 & 0.32\\
+United States  & 1.62 & $-2.75$ & 3.1 & 0.51 & 0.56 & 0.78 & 1.09 & 0.71\\
+France         & 1.64 & $-3.03$ & 3.0 & 0.54 & 0.48 & 0.65 & 0.89 & 0.60\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
-\item $g_{\text{int}}$: trend in CO$_2$ per unit of GDP, 2005--2022 (Global Carbon Budget via Our World in
-Data); TFR from UN WPP 2024. $\epsilon^\ast$: habitat per capita, relative to 2023, at which fertility
+\item $g_{\text{int}}$: average annual rate of change in CO$_2$ per unit of GDP, 2005--2022 (Global Carbon
+Budget emissions and Maddison Project GDP, via Our World in Data); TFR from UN WPP 2024. $\epsilon^\ast$: habitat per capita, relative to 2023, at which fertility
 reaches replacement. $L^\ast=Q_\infty/\epsilon^\ast$: stationary population relative to 2023 when clean
 research clears the threshold. $m^\ast$: clean research needed for a stationary population, relative to
 the effort that would produce the country's current measured clean progress, from \eqref{eq:m_star};
-values above one mean that the current equivalent falls short. Thresholds for a stationary equilibrium;
+values above one mean that the current equivalent falls short, and the results apply to effort
+strictly above $m^\ast$. Thresholds for a stationary equilibrium;
 transitions from 2023 need up to a tenth more (Section~\ref{sub:proj}). Without remediation unless stated.
 \item[a] Outside the sensitivity range $0\le\nu\le0.5$ (Section~\ref{sub:recal} and Appendix~\ref{app:nu}).
 \end{tablenotes}
@@ -1602,20 +1643,20 @@ transitions from 2023 need up to a tenth more (Section~\ref{sub:proj}). Without 
 Table~\ref{tab:thresholds} reports the results. Four findings stand out.
 
 \emph{Without a scale effect, current clean progress suffices almost everywhere.} With $\nu=0$, only Korea
-and Japan fall short, and narrowly: they need 11 and 6 per cent more clean effort. Every other country
-needs at most three-fifths of the effort that produces its current progress. In this case the threshold
+and Japan fall short, and narrowly: they need 12 and 7 per cent more clean effort. Every other country
+needs at most about three-fifths of the effort that produces its current progress. In this case the threshold
 depends only on how fast emission intensity falls, and the habitat gap affects the size of the
 stationary population but not whether there is one.
 
 \emph{At the upper end of the range, the countries with the lowest fertility fall short.} With $\nu=0.5$,
 Korea needs more than five times its current effort equivalent, Japan two and a half times, China nearly twice
-and Italy two-fifths more. Germany, the United States, France, Sweden and the United Kingdom clear the
+and Italy almost half as much again. Germany, the United States, France, Sweden and the United Kingdom clear the
 threshold. The ranking follows the stationary population as much as current decoupling. China and Italy
-reduce emission intensity almost as fast as the United States, by 2.7 and 2.6 per cent a year against
-2.8, but their fertility is so far below replacement that their populations would settle at a tenth and a
+reduce emission intensity almost as fast as the United States, by 2.67 and 2.61 per cent a year against
+2.75, but their fertility is so far below replacement that their populations would settle at a tenth and a
 sixth of today's, and smaller populations do less clean research. Across the sensitivity range, then,
-Korea needs between 1.1 and 5.4 times its current effort equivalent, Japan between 1.1 and 2.5, China between 0.6
-and 1.8 and Italy between 0.6 and 1.4. Only at $\nu=1$, outside the sensitivity range, do Germany and the United States also fall
+Korea needs between 1.1 and 5.4 times its current effort equivalent, Japan between 1.1 and 2.6, China between 0.6
+and 1.9 and Italy between 0.6 and 1.5. Only at $\nu=1$, outside the sensitivity range, do Germany and the United States also fall
 short.
 
 \emph{Remediation helps, but little.} A remediation tax of 10 per cent of labour income raises the
@@ -1624,7 +1665,7 @@ none of the four shortfalls, consistent with Corollary~\ref{cor:threshold}: reme
 to cross the threshold. If quality acts on costs only, $\iota=0$, it is weaker still: the same tax raises
 the stationary population by 7 to 8 per cent and lowers the required effort by 3 to 4 per cent. The
 required efforts without remediation are 1 to 4 per cent higher than in Table~\ref{tab:thresholds}, for
-example $5.59$ for Korea and $2.59$ for Japan at $\nu=0.5$.
+example $5.65$ for Korea and $2.62$ for Japan at $\nu=0.5$.
 
 \emph{Transitions add to the requirement, and the trap unfolds slowly.} Simulated paths, which include
 the undershoot of population on the way to $L^\ast$, require up to a tenth more effort than
@@ -1708,8 +1749,8 @@ everything that currently sets each country's fertility apart from the model's b
 from migration and from age structure, and they apply to national aggregates a feedback estimated from
 variation across settlements. The cross-section also tells us nothing about how quickly tastes and costs
 adjust when habitat changes over time; Section~\ref{sub:caveats} notes that the habitat channel accounts
-for little of the observed decline in fertility. Reading current clean progress from the trend in emission
-intensity treats all of that trend as the equivalent of clean research, and the scale effect is not
+for little of the observed decline in fertility. Reading current clean progress from the decline in emission
+intensity treats all of that decline as the equivalent of clean research, and the scale effect is not
 identified; we report a sensitivity range. Read with these qualifications, the exercise delivers a quantitative answer to the question
 the paper poses. The habitat mechanism makes a stationary population the long-run outcome only where
 clean research clears a threshold, and where fertility is lowest that threshold is high, while the
@@ -1728,7 +1769,7 @@ stationary population (Proposition~\ref{prop:semiendog}). With a scale effect, r
 decoupling, because the larger population it sustains does more clean research, but the effect is
 weak: with $r=2$ and $\nu=0.5$, remediation would be the cheaper route across the threshold only if the
 threshold share exceeded the whole labour force. Neither instrument changes the long-run growth rate,
-and both lower the level of income per capita. Clean research withdraws labour from production, and
+and, with the common habitat index, both lower the level of income per capita. Clean research withdraws labour from production, and
 both instruments, being financed from labour income, reduce education spending, which the
 human-capital technology amplifies: a one per cent cut in education inputs lowers human capital by
 $\theta/(1-\theta)\approx5$ per cent in the long run.
@@ -1768,8 +1809,9 @@ head, which would strengthen the case for both.
 \label{sec:conclusion}
 % ============================================================
 
-Idea-based growth models with endogenous fertility leave open what could stop a decline in population.
-\citet{jones22} shows that a shrinking population can stall idea production; \citet{STRULIK2024104943}
+Idea-based growth models with endogenous fertility leave open what, other than policy, could stop a
+decline in population. \citet{jones22} shows that a shrinking population can stall idea production
+unless a planner restores fertility in time; \citet{STRULIK2024104943}
 shows that growth can continue when ideas are produced by human capital, and his result applies at a
 constant population too. Neither supplies a force that brings fertility back to replacement. This paper
 proposes one. When the taste for children and the time needed to raise them depend on habitat per capita,
@@ -1802,7 +1844,7 @@ lower, although reverse causality from fertility to emissions cannot be excluded
 
 Calibrated to these estimates, the model gives a sobering quantitative answer. Over a sensitivity range
 for the scale effect informed by cross-country evidence, Korea needs between 1.1 and 5.4 times the
-clean effort that produces its current measured clean progress, and Japan between 1.1 and 2.5; China and
+clean effort that produces its current measured clean progress, and Japan between 1.1 and 2.6; China and
 Italy fall short only at the upper end of the range, and the other economies we consider clear the
 threshold throughout. Where clean research clears the threshold, population settles only after large
 declines, and the lower the fertility, the larger the decline: at the within-country pollution
@@ -2093,14 +2135,15 @@ reject the time-cost channel, and it does not reject the taste channel.
 Our second source is the Interview Survey of the US Consumer Expenditure Survey, data releases 2000--2025 (interviews conducted 2000--2026), which
 supports both ratios: $662{,}987$ quarterly interviews, which we average within consumer
 unit to obtain $236{,}529$ households. The estimation sample is the $64{,}853$ units with a
-reference person aged 25--44, one or two adults, and positive earnings. Three features of the
+reference person aged 25--44, one or two adults on average, an hourly wage between 3 and 200, at most
+two earners on average, and positive total and non-education expenditure. Three features of the
 implementation matter. First, Proposition~\ref{prop:identification} defines the shares relative to
 \emph{full} income $W$, not to spending: relative to consumption, education outlays are the
 constant $\gamma\theta$ whatever the habitat. We therefore scale each numerator by the household's
 hourly wage, family wage and salary income divided by the annual hours of the reference person and
 spouse. Second, the public files report location only as the population class of the sampling
 area, five bands plus a rural indicator; habitat is minus the log of the class midpoint, and
-inference is by bootstrap over 139 state-by-class cells because sampling-unit identifiers are
+inference is by bootstrap over 139 state-by-class cells (140 in the broader sample of panel~C) because sampling-unit identifiers are
 withheld for most households. Third, fertility is measured by children under 18 present in the
 household. All equations include year effects and controls for age, sex, marital status, race and
 region, and are weighted.
@@ -2115,37 +2158,38 @@ region, and are weighted.
 Outcome & Habitat elasticity & Ratio to $\hat\pi_n$ & 95\% interval\\
 \midrule
 \multicolumn{4}{l}{\emph{A. Headline: earners, $N=64{,}853$}}\\
-Children under 18, $\hat\pi_n$                    & $\phantom{-}0.0370$ $(0.0053)$ & & \\
-Education spending / wage                         & $-0.0129$ $(0.0166)$ & $-0.35$ & $[-1.29,\,0.43]$\\
-Any education spending                            & $\phantom{-}0.0036$ $(0.0052)$ & $\phantom{-}0.10$ & $[-0.21,\,0.34]$\\
-Consumption / wage                                & $\phantom{-}0.0088$ $(0.0024)$ & $\phantom{-}0.24$ & $[\phantom{-}0.13,\,0.34]$\\
-Household annual hours                            & $-0.0123$ $(0.0021)$ & $-0.33$ & $[-0.45,\,-0.24]$\\
-Hourly wage                                       & $-0.0586$ $(0.0060)$ & & \\
+Children under 18, $\hat\pi_n$                    & $\phantom{-}0.0370$ $(0.0062)$ & & \\
+Education spending / wage                         & $-0.0129$ $(0.0188)$ & $-0.35$ & $[-1.43,\,0.58]$\\
+Any education spending                            & $\phantom{-}0.0036$ $(0.0061)$ & $\phantom{-}0.10$ & $[-0.25,\,0.38]$\\
+Consumption / wage                                & $\phantom{-}0.0088$ $(0.0023)$ & $\phantom{-}0.24$ & $[\phantom{-}0.11,\,0.35]$\\
+Household annual hours                            & $-0.0123$ $(0.0022)$ & $-0.33$ & $[-0.45,\,-0.22]$\\
+Hourly wage                                       & $-0.0586$ $(0.0062)$ & & \\
 \midrule
 \multicolumn{4}{l}{\emph{B. Conditioning on the log wage}}\\
-Children under 18, $\hat\pi_n$                    & $\phantom{-}0.0326$ $(0.0054)$ & & \\
-Education spending / wage                         & $-0.0259$ $(0.0160)$ & $-0.80$ & $[-1.94,\,0.07]$\\
-Consumption / wage                                & $-0.0229$ $(0.0032)$ & $-0.70$ & $[-1.08,\,-0.53]$\\
-Household annual hours                            & $-0.0129$ $(0.0023)$ & $-0.39$ & $[-0.55,\,-0.28]$\\
+Children under 18, $\hat\pi_n$                    & $\phantom{-}0.0326$ $(0.0062)$ & & \\
+Education spending / wage                         & $-0.0259$ $(0.0182)$ & $-0.79$ & $[-2.07,\,0.24]$\\
+Consumption / wage                                & $-0.0229$ $(0.0034)$ & $-0.70$ & $[-1.07,\,-0.50]$\\
+Household annual hours                            & $-0.0129$ $(0.0024)$ & $-0.39$ & $[-0.55,\,-0.27]$\\
 \midrule
 \multicolumn{4}{l}{\emph{C. All one- and two-adult households, $N=74{,}902$}}\\
-Children under 18, $\hat\pi_n$                    & $\phantom{-}0.0353$ $(0.0049)$ & & \\
-Household annual hours, non-workers at zero       & $-0.0103$ $(0.0018)$ & $-0.29$ & $[-0.44,\,-0.20]$\\
+Children under 18, $\hat\pi_n$                    & $\phantom{-}0.0353$ $(0.0054)$ & & \\
+Household annual hours, non-workers at zero       & $-0.0103$ $(0.0022)$ & $-0.29$ & $[-0.44,\,-0.20]$\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
 \item Elasticities with respect to minus the log population of the sampling area. Education
-spending is winsorised at the 99th percentile and estimated by Poisson pseudo-maximum likelihood,
-as are the counts and the hours in panel C; consumption, hours in panels A and B, and the wage are
+spending divided by the hourly wage is capped at its 99th percentile and estimated by Poisson
+pseudo-maximum likelihood, as are the counts and the hours in panel C; consumption, hours in panels A and B, and the wage are
 in logs. Consumption is total expenditure less education. Bootstrap standard errors in
-parentheses and percentile intervals, 200 replications. Tastes alone predict a ratio in
+parentheses and percentile intervals of the paired ratio draws, 999 replications over state-by-class
+cells (139 in panels A and B, 140 in panel C), with no draws discarded. Tastes alone predict a ratio in
 $[-0.160,-0.126]$ for the shares; any cost channel predicts $0$.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
 
 The fertility gradient appears for a third time, in a third survey: $\hat\pi_n=0.037$, or
-$\hat S=0.25$ $[0.18,\,0.32]$ at $\varrho=0.85$, close to the World Values Survey estimate.
+$\hat S=0.25$ $[0.17,\,0.33]$ at $\varrho=0.85$, close to the World Values Survey estimate.
 
 Labour supply responds, and robustly. Household hours fall with habitat in every specification,
 with a ratio between $-0.29$ and $-0.39$ and intervals that exclude zero. Within the maintained
@@ -2162,7 +2206,7 @@ $-0.20$, which only touches the upper end of the intervals obtained here.
 The share test fares differently. The education share, the numerator on which
 Appendix~\ref{sub:restrictions} places most weight, is uninformative: fewer than a third of these
 households report any education outlay while in the survey, the amounts are highly skewed and
-include adults' own tuition, and the ratio of $-0.35$ carries an interval, $[-1.29,\,0.43]$, that
+include adults' own tuition, and the ratio of $-0.35$ carries an interval, $[-1.43,\,0.58]$, that
 contains zero, the taste band and a great deal else.
 
 The consumption share is precisely estimated but behaves as neither hypothesis requires.
@@ -2604,9 +2648,9 @@ labour-income financing even an amenity weight equal to that of consumption, $\P
 it, because the direct gain, $\Psi\,Q_\infty'/Q_\infty=2$ at $\tau=0$, falls short of the long-run cost of
 $7.3$. In Korea the same planner chooses no tax even with $\Psi=1$ and education exempt, although the long-run
 condition of Proposition~\ref{prop:welfare} holds there, $2$ against $(1+\gamma\theta)/(1-R)=1.35$. The condition compares
-stationary paths. From Korea's starting point the gain in quality arrives only as pressure fades, over
-many generations, while the cost is paid from the first, and at a discount rate of one per cent the cost
-dominates. Second, the treatment of tastes hardly matters. The habitat channel moves fertility only along the
+stationary paths; along Korea's simulated transition, at a discount rate of one per cent, the discounted
+gain does not cover the cost. We have not decomposed this result into its sources along the
+transition. Second, the treatment of tastes hardly matters. The habitat channel moves fertility only along the
 transition, and in the long run fertility is at replacement under every tax. Third, the population
 criterion matters a great deal. A total utilitarian values the population that remediation sustains and
 chooses a positive tax in every case. With labour-income financing and no amenity, the tax is nine per
@@ -2847,8 +2891,9 @@ an environmental Empty Planet can exceed what any of these criteria would pay.
 \label{app:paths}
 \setcounter{table}{0}
 
-Table~\ref{tab:proj} reports simulated paths for all nine countries at current clean progress and without
-a scale effect, $\nu=0$, which is equivalent to continuing each country's 2005--2022 trend in emission
+Table~\ref{tab:proj} reports simulated paths, computed with the compound rates of
+Section~\ref{sub:recal}, for all nine countries at current clean progress and without
+a scale effect, $\nu=0$, which is equivalent to continuing each country's 2005--2022 rate of change in emission
 intensity. They illustrate the mechanism and should not be read as forecasts. For the seven countries that clear the threshold, the long-run levels coincide with the stationary
 populations $L^\ast$ of Table~\ref{tab:thresholds}. Korea and Japan lie just below the threshold at
 $\nu=0$ and do not settle; for them the table reports the population in 2383. The dates depend in addition on how quickly tastes and the
@@ -2869,27 +2914,27 @@ States and the United Kingdom, and only in the 23rd century in Italy and East As
 \cmidrule(lr){7-9}
  & 2023 & \% a year & & & by & 2083 & 2143 & long run\\
 \midrule
-Korea          & 0.72 & $-1.67$ & 5.3  & 37.8 & 2293 & 0.18 & 0.09 & 0.04$^\dagger$\\
-China          & 1.00 & $-2.71$ & 8.7  & 16.5 & 2263 & 0.30 & 0.18 & 0.10\\
-Japan          & 1.21 & $-1.73$ & 5.5  & 9.2  & 2263 & 0.40 & 0.25 & 0.16$^\dagger$\\
-Italy          & 1.20 & $-2.64$ & 8.4  & 9.4  & 2233 & 0.40 & 0.26 & 0.17\\
-Sweden         & 1.43 & $-4.09$ & 13.1 & 5.1  & 2173 & 0.54 & 0.42 & 0.32\\
-Germany        & 1.44 & $-3.18$ & 10.2 & 5.0  & 2173 & 0.54 & 0.41 & 0.32\\
-United Kingdom & 1.56 & $-4.70$ & 15.0 & 3.7  & 2143 & 0.63 & 0.53 & 0.44\\
-United States  & 1.62 & $-2.79$ & 8.9  & 3.1  & 2143 & 0.65 & 0.54 & 0.51\\
-France         & 1.64 & $-3.08$ & 9.8  & 3.0  & 2143 & 0.67 & 0.57 & 0.54\\
+Korea          & 0.72 & $-1.66$ & 5.3  & 37.8 & 2293 & 0.18 & 0.09 & 0.04$^\dagger$\\
+China          & 1.00 & $-2.67$ & 8.5  & 16.5 & 2263 & 0.30 & 0.17 & 0.10\\
+Japan          & 1.21 & $-1.71$ & 5.5  & 9.2  & 2263 & 0.40 & 0.25 & 0.16$^\dagger$\\
+Italy          & 1.20 & $-2.61$ & 8.3  & 9.4  & 2233 & 0.40 & 0.26 & 0.17\\
+Sweden         & 1.43 & $-4.01$ & 12.8 & 5.1  & 2173 & 0.54 & 0.42 & 0.32\\
+Germany        & 1.44 & $-3.13$ & 10.0 & 5.0  & 2173 & 0.54 & 0.41 & 0.32\\
+United Kingdom & 1.56 & $-4.59$ & 14.7 & 3.7  & 2143 & 0.63 & 0.53 & 0.44\\
+United States  & 1.62 & $-2.75$ & 8.8  & 3.1  & 2143 & 0.65 & 0.54 & 0.51\\
+France         & 1.64 & $-3.03$ & 9.7  & 3.0  & 2143 & 0.67 & 0.57 & 0.54\\
 \midrule
 \multicolumn{9}{l}{No further decoupling (all countries): population declines indefinitely, by $0.41$ per cent a year in the limit}\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
-\item Trend scenario: emission intensity $g_{\text{int}}$ continues at its 2005--2022 rate (CO$_2$ per unit
-of GDP, Global Carbon Budget via Our World in Data); TFR from UN WPP 2024. $\epsilon^\ast$ is the habitat
+\item Emission intensity $g_{\text{int}}$ continues at its average annual rate of change over 2005--2022
+(CO$_2$ per unit of GDP; Global Carbon Budget emissions and Maddison Project GDP, via Our World in Data); TFR from UN WPP 2024. $\epsilon^\ast$ is the habitat
 per capita, relative to 2023, at which fertility reaches replacement. ``Long run'' is the stationary
 population $Q_\infty/\epsilon^\ast$ of Proposition~\ref{prop:decoupling}(i). $\hat\zeta=-\zeta^\ast g_{\text{int}}/g_y$ expresses current clean progress as a
 rate of decoupling, against the threshold $\zeta^\ast=5.88$. $^\dagger$Korea and Japan lie
-just below the threshold; the entry is the 2383 value, after which population declines by
-$0.04$ and $0.03$ per cent a year. Rows are ordered by long-run population.
+just below the threshold; the entry is the 2383 value, after which population declines towards the
+asymptotic rates of Proposition~\ref{prop:threshold}(ii), $0.04$ and $0.02$ per cent a year. Rows are ordered by long-run population.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -2905,8 +2950,9 @@ unrelated to country size once income is held fixed, the cross-country elasticit
 respect to population identifies $\nu$.
 
 We measure clean progress as in Section~\ref{sub:recal}, $g_{B,i}=(1+g_{\text{int},i})^{-30}-1$, where
-$g_{\text{int},i}$ is the annual change in carbon-dioxide emissions per unit of GDP, for all countries with
-more than one million people (Global Carbon Budget via Our World in Data). We report two specifications.
+$g_{\text{int},i}$ is the average annual rate of change in carbon-dioxide emissions per unit of GDP, for
+all countries with more than one million people (Global Carbon Budget emissions and Maddison Project GDP,
+via Our World in Data). We report two specifications.
 The first regresses $\ln g_{B,i}$ on log population, which requires $g_{B,i}>0$ and so drops the quarter of
 countries whose emission intensity rose. The second keeps every country: it regresses the annual decline
 in emission intensity, in levels, on log population and divides the coefficient by the mean decline. Both
@@ -2924,17 +2970,17 @@ production to poorer countries, and for population growth over the period.
 \cmidrule(lr){3-5}\cmidrule(lr){6-8}
 Period & Sample & $\hat\nu$ & s.e. & $N$ & $\hat\nu$ & s.e. & $N$\\
 \midrule
-2005--2022 & All          & $-0.08$ & 0.06 & 110 & $0.09$  & 0.10 & 149\\
+2005--2022 & All          & $-0.08$ & 0.06 & 110 & $0.09$  & 0.11 & 149\\
            & Richest 40\% & $-0.14$ & 0.09 & 58  & $-0.09$ & 0.05 & 60\\
 1995--2022 & All          & $-0.10$ & 0.07 & 111 & $0.02$  & 0.08 & 147\\
-           & Richest 40\% & $-0.26$ & 0.08 & 55  & $-0.12$ & 0.07 & 59\\
+           & Richest 40\% & $-0.26$ & 0.08 & 55  & $-0.12$ & 0.06 & 59\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}\footnotesize
 \item OLS across countries with more than one million people at the start of the period, controlling for
 log GDP per person at the start and population growth over the period; heteroskedasticity-robust standard
 errors. Column (2) divides the coefficient on log population by the mean annual decline in emission
-intensity (for 2005--2022 and 1995--2022, 1.1 and 1.4 per cent a year for all countries, 2.8 and 2.6 for the
+intensity (for 2005--2022 and 1995--2022, 1.0 and 1.4 per cent a year for all countries, 2.8 and 2.5 for the
 richest 40 per cent). Samples by
 GDP per person at the start of the period.
 \end{tablenotes}
@@ -2943,7 +2989,7 @@ GDP per person at the start of the period.
 
 Table~\ref{tab:nu} reports the results. No specification finds that larger countries decouple faster.
 The point estimates lie between $-0.26$ and $0.09$, and the largest value inside any 95 per cent
-confidence interval is $0.29$. A national scale effect of $0.5$ or more is therefore hard to reconcile with
+confidence interval is $0.31$. A national scale effect of $0.5$ or more is therefore hard to reconcile with
 the data.
 
 Three qualifications limit what the test can show. First, research intensity may vary with size: small
@@ -2964,6 +3010,6 @@ Section~\ref{sub:proj} are reported at both ends, and at $\nu=1$.
 
 
 \singlespacing
- {\bibliographystyle{chicago}
- 	\bibliography{resources}
+\bibliographystyle{chicago}
+\bibliography{resources}
 \end{document}
